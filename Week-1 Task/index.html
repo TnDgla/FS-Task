@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week-1 Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h2>Weekly Timetable</h2>
+        <div class="table">
+            <table border="10">
+                <thead>
+                    <tr>
+                        <th>Day/Time</th>
+                        <th>10:00-11:00</th>
+                        <th>11:00-12:00</th>
+                        <th>12:00-01:00</th>
+                        <th>01:00-02:00</th>
+                        <th>02:00-03:00</th>
+                        <th>03:00-04:00</th>
+                        <th>04:00-05:00</th>
+                        <th>05:00-06:00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Monday</th>
+                        <td onclick="showTeacher(' ')"></td>
+                        <td onclick="showTeacher('DAA')">BCSC0022<br>AB-1 330</td>
+                        <td onclick="showTeacher(' ')"></td>
+                        <td onclick="showTeacher('FS')">BCSE1251<br>AB-1 330</td>
+                        <td onclick="showTeacher('NLP')">BCSE0704<br>AB-1 330</td>
+                        <td onclick="showTeacher('CP')">PCPH0002<br>AB-1 413</td>
+                        <td onclick="showTeacher(' ')" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td onclick="showTeacher(' ')"></td>
+                        <td onclick="showTeacher('DM')">BCSE0703<br>AB-1 330</td>
+                        <td onclick="showTeacher(' ')"></td>
+                        <td onclick="showTeacher('DAA')">BCSC0022<br>AB-1 330</td>
+                        <td onclick="showTeacher('DAALab')" colspan="2">BCSC0812<br>AB-1 325</td>
+                        <td onclick="showTeacher('VA')">PVRH0001<br>AB-1 306</td>
+                        <td onclick="showTeacher(' ')"></td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td onclick="showTeacher('FS')">BCSE1251<br>AB-1 330</td>
+                        <td onclick="showTeacher('DM')">BCSE0703<br>AB-1 330</td>
+                        <td onclick="showTeacher(' ')"></td>
+                        <td onclick="showTeacher('NLP')">BCSE0704<br>AB-1 330</td>
+                        <td onclick="showTeacher('NLPLab')" colspan="2">BCSE0734/3AD1<br>AB-1 330
+                            <hr> BCSE0734/3AD2<br>AB-1 330
+                        </td>
+                        <td onclick="showTeacher('FSLab')" colspan="2">BCSE0281<br>AB-1 330</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td onclick="showTeacher('DMLab')" colspan="2">BCSE0733/3AD1<br>AB-1 330
+                            <hr> BCSE0733/3AD2<br>AB-1 330
+                        </td>
+                        <td onclick="showTeacher(' ')"></td>
+                        <td onclick="showTeacher('GDPI')">PGDH0001<br>AB-1 330</td>
+                        <td onclick="showTeacher('FS')">BCSE1251<br>AB-1 330</td>
+                        <td onclick="showTeacher('QRA')">PQRH0001<br>AB-1 330</td>
+                        <td onclick="showTeacher('DM')">BCSE0703<br>AB-1 330</td>
+                        <td onclick="showTeacher('RG')">BEDM0001<br>(Online)</td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td onclick="showTeacher('CP')">PCPH0002<br>AB-1 413</td>
+                        <td onclick="showTeacher('NLP')">BCSE0704<br>AB-1 330</td>
+                        <td onclick="showTeacher(' ')"></td>
+                        <td onclick="showTeacher('DAA')">BCSC0022<br>AB-1 330</td>
+                        <td onclick="showTeacher('LR')">PQRH0002<br>AB-1 330</td>
+                        <td onclick="showTeacher(' ')"></td>
+                        <td onclick="showTeacher(' ')"></td>
+                        <td onclick="showTeacher('RG')">BEDM0001<br>(Online)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
