@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="time.css">
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <td colspan="6">Timetable</td>
+        </tr>
+        <tr>
+            <td rowspan="6">Hours</td>
+            <td>Mon</td>
+            <td>Tues</td>
+            <td>Wed</td>
+            <td>Thurs</td>
+            <td>Fri</td>
+        </tr>
+        <tr>
+            <td onclick="show('Sci')">Science</td>
+            <td onclick="show('Math')">Maths</td>
+            <td onclick="show('Sci')">Science</td>
+            <td onclick="show('Math')">Maths</td>
+            <td onclick="show('Art')">Arts</td>
+        </tr>
+        <tr>
+            <td onclick="show('Soc')">Social</td>
+            <td onclick="show('Hin')">Hindi</td>
+            <td onclick="show('Eng')">English</td>
+            <td onclick="show('Soc')">Social</td> 
+            <td onclick="show('Spo')">Sports</td>
+        </tr>
+        <tr>
+            <td colspan="5">LUNCH</td>
+        </tr>
+        <tr>
+            <td onclick="show('Sci')">Science</td>
+            <td onclick="show('Math')">Maths</td>
+            <td onclick="show('Sci')">Science</td>
+            <td onclick="show('Math')">Maths</td>
+            <td rowspan="2" onclick="show('Pro')">Project</td>
+        </tr>
+        <tr>
+            <td onclick="show('Soc')">Social</td> 
+            <td onclick="show('Hin')">Hindi</td>
+            <td onclick="show('Eng')">English</td>
+            <td onclick="show('Soc')">Social</td>
+        </tr>
+    </table>
+    <div id="detail">
+        <h3 id="name"></h3>
+        <p id="room"></p>
+    </div>
+    <script src="time.js"></script>
+</body>
+</html>
