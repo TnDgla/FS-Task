@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    font-family: monospace;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    margin: 3px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.header{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.header h1{
+    font-size: 40px;
+}
+
+.main{
+    height: fit-content;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th, td{
+    padding: 10px;
+}
+
+thead:first-child, td:first-child{
+    background-color: rgba(59, 175, 243, 0.8);
+    color: white;
+}
+
+.footer{
+    padding-top: 20px;
+    font-size: 16px;
+}
