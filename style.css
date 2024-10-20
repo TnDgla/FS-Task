@@ -1,0 +1,109 @@
+.tilt{
+    height: 700px;
+    width: 500px;
+    background-color: orange;
+    transform: rotate(60deg);
+    position: relative;
+    left: -200px;
+    top: -120px;
+}
+.container{
+    height: 550px;
+    background-color: rgb(221, 221, 221);
+    position: absolute;
+    left: 110px;
+    top: 45px;
+    border-radius: 10px;
+    box-shadow: 5px 5px gray;
+}
+.col-2{
+    width: 15.5%;
+}
+.col{
+    height: 75px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.658);
+    border-radius: 5px;
+    margin: 5px;
+    background-color: white;
+}
+.row{
+    margin-left: 55px;
+    width: 90%;
+}
+.small{
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.small h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.head{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+p{
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    color: gray;
+}
+.btns{
+    display: flex;
+    margin-top: 7px;
+}
+.lect{
+    background-color: palevioletred;
+    height: 120%;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.lab{
+    background-color: lightseagreen;
+    height: 120%;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.room1{
+    background-color: orange;
+    height: 120%;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.room2{
+    background-color: limegreen;
+    height: 120%;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.lunch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: none;
+}

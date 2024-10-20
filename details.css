@@ -1,0 +1,35 @@
+.tilt{
+    height: 700px;
+    width: 500px;
+    background-color: orange;
+    transform: rotate(60deg);
+    position: relative;
+    left: -200px;
+    top: -120px;
+}
+.container{
+    height: 550px;
+    width: 50%;
+    background-color: rgb(221, 221, 221);
+    position: absolute;
+    left: 400px;
+    top: 45px;
+    border-radius: 10px;
+    box-shadow: 5px 5px gray;
+}
+.col{
+    height: 100px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.row{
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    margin-top: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
