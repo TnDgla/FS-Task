@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Timetable 3rd Year</h1>
+        <div class="grid-timetable">
+            <div class="header">Hours/Days</div>
+            <div class="time">8-9 AM</div>
+            <div class="time">9-10 AM</div>
+            <div class="time">10-11 AM</div>
+            <div class="time">11-12 AM</div>
+            <div class="time">12-01 AM</div>
+            <div class="time">01-02 PM</div>
+            <div class="time">02-03 PM</div>
+            <div class="time">03-04 PM</div>
+
+            <!-- Row 1 -->
+            <div class="header">Monday</div>
+            <div class="subject subject1" onclick="showTeacher('FULL_STACK')">Full Stack Development</div>
+            <div class="subject subject2" onclick="showTeacher('VERBAL APTITUDE')">Verbal Aptitude</div>
+            <div class="subject subject3">N/A</div>
+            <div class="subject subject4" onclick="showTeacher('COMPETITIVE_PROGRAMMING')">Competitive Programming</div>            
+            <div class="subject lu1">LUNCH</div>
+            <div class="subject subject5" onclick="showTeacher('THEORY OF AUTOMATA')">Theory of Automata</div>
+            <div class="subject subject6" onclick="showTeacher('AGILE SOFTWARE DEVELOPMENT')">Agile Software Development</div>
+            <div class="subject subject7">N/A</div>
+
+
+            <!-- Row 2 -->
+            <div class="header">Tuesday</div>
+            <div class="subject subject01" onclick="showTeacher('FULL_STACK')">Full Stack Development Lab</div>            
+            <div class="subject subject03" onclick="showTeacher('DATA STRUCTURES AND ALGORITHM')">Data Structures and Algorithm Lab</div>
+            <div class="subject subject05" onclick="showTeacher('MACHINE LEARNING')">Machine Learning</div>
+            <div class="subject subject06" onclick="showTeacher('AGILE SOFTWARE DEVELOPMENT')">Agile Software Development</div>
+            <div class="subject subject07">N/A</div>
+
+            <!-- Row 3 -->
+            <div class="header">Wednesday</div>
+            <div class="subject subject11" onclick="showTeacher('COMPETITIVE_PROGRAMMING')">Competitive Programming</div>
+            <div class="subject subject12" onclick="showTeacher('FULL_STACK')">Full Stack Development</div>
+            <div class="subject subject13" onclick="showTeacher('THEORY OF AUTOMATA')">Theory of Automata</div>
+            <div class="subject subject14" onclick="showTeacher('DATA STRUCTURES AND ALGORITHM')">Data Structures and Algorithm</div>
+            <div class="subject subject15" onclick="showTeacher('THEORY OF AUTOMATA')">Theory of Automata</div>
+            <div class="subject subject16" onclick="showTeacher('FULL_STACK')">Full Stack Development</div>
+            <div class="subject subject17" onclick="showTeacher('THEORY OF AUTOMATA')">Theory of Automata</div>
+
+            <!-- Row 4 -->
+
+            <div class="header">Thursday</div>
+            <div class="subject subject21" onclick="showTeacher('QUANT AND APTITUDE')">Quant and Aptitude</div>
+            <div class="subject subject22" onclick="showTeacher('AGILE SOFTWARE DEVELOPMENT')">Agile Software Development</div>
+            <div class="subject subject23" onclick="showTeacher('THEORY OF AUTOMATA')">Theory of Automata</div>
+            <div class="subject subject24" onclick="showTeacher('MACHINE LEARNING')">Machine Learning</div>
+            <div class="subject subject25" onclick="showTeacher('DATA STRUCTURES AND ALGORITHM')">Data Structures and Algorithm</div>
+            <div class="subject subject26" onclick="showTeacher('MACHINE LEARNING LAB')">Machine Learning LAB</div>
+
+            <!-- Row 5 (Lunch) -->
+
+            <!-- <div class="subject lunch" colspan="5">Lunch</div> -->
+
+            <!-- Row 6 -->
+            <div class="header">Friday</div>      
+            <div class="subject subject31" onclick="showTeacher('DATA STRUCTURES AND ALGORITHM')">Data Structures and Algorithm Lab</div>
+            <div class="subject subject33" onclick="showTeacher('MACHINE LEARNING')">Machine Learning</div>
+            <div class="subject subject34" onclick="showTeacher('THEORY OF AUTOMATA')">Theory of Automata</div>
+            <div class="subject subject35" onclick="showTeacher('QUANT AND APTITUDE')">Logical Reasoning</div>
+            <div class="subject subject36">N/A</div>
+            <div class="subject subject37" onclick="showTeacher('GROUP DISCUSSION')">GDPI</div>
+
+        </div>
+    </div>
+
+    <div id="teacher" class="modal">
+        <div class="content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="details"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
