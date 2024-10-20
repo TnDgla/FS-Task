@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+    body{
+        background-color: azure;
+    }
+    table,th,td{
+        margin: auto;
+        border: 2px solid black;
+        text-align: center;
+        background-color: beige;
+    }
+    tr td:hover {background-color: greenyellow;}
+    a:link{
+        text-decoration: none;
+        background-color: transparent;
+        color: black;
+    }
+    a:active{
+        color: rgb(223, 19, 19);
+    }
+    a:visited{
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <table style="width: 50vw;">
+        <thead>
+            <tr> <th colspan="6">Time Table</th></tr>
+            <tr>
+                <th>Hour</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>8:00-9:00</th>
+                <td><a target="_blank" href="Science.html">Science</a></td>
+                <td><a target="_blank" href="Maths.html">Maths</a></td>
+                <td><a target="_blank" href="Science.html">Science</a></td>
+                <td><a target="_blank" href="Maths.html">Maths</a></td>
+                <td><a target="_blank" href="Arts.html">Arts</a></td>
+            </tr>
+            <tr>
+                <th>9:00-10:00</th>
+                <td><a target="_blank" href="Social.html">Social</a></td>
+                <td><a target="_blank" href="Hindi.html">Hindi</a></td>
+                <td><a target="_blank" href="English.html">English</a></td>
+                <td><a target="_blank" href="Social.html">Social</a></td>
+                <td><a target="_blank" ="Sports.html">Sports</a></td>
+            </tr>
+            <tr>
+                <th>10:00-11:00</th>
+                <td colspan="5">Lunch</td>
+            </tr>
+            <tr>
+                <th>11:00-12:00</th>
+                <td><a target="_blank" href="Science.html">Science</a></td>
+                <td><a target="_blank" href="Maths.html">Maths</a></td>
+                <td><a target="_blank" href="Science.html">Science</a></td>
+                <td><a target="_blank" href="Maths.html">Maths</a></td>
+                <td rowspan="2"><a target="_blank" href="Projects.html">Projects</a></td>
+            </tr>
+            <tr>
+                <th>12:00-1:00</th>
+                <td><a target="_blank" href="Social.html">Social</a></td>
+                <td><a target="_blank" href="Hindi.html">Hindi</a></td>
+                <td><a target="_blank" href="English.html">English</a></td>
+                <td><a target="_blank" href="Social.html">Social</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
