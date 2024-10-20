@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-purple-100 min-h-screen">
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-bold mb-6 text-center text-blue-800 animate-fadeIn" style="animation-delay: 0.1s;">Class Timetable</h1>
+        <div id="timetable" class="grid grid-cols-6 gap-2 mb-4 rounded-lg overflow-hidden shadow-lg bg-white">
+            <div class="font-bold text-center py-3 bg-blue-600 text-white">Time</div>
+            <div class="font-bold text-center py-3 bg-blue-600 text-white">Monday</div>
+            <div class="font-bold text-center py-3 bg-blue-600 text-white">Tuesday</div>
+            <div class="font-bold text-center py-3 bg-blue-600 text-white">Wednesday</div>
+            <div class="font-bold text-center py-3 bg-blue-600 text-white">Thursday</div>
+            <div class="font-bold text-center py-3 bg-blue-600 text-white">Friday</div>
+        </div>
+
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+            <div class="bg-white p-6 rounded-lg max-w-md w-full shadow-2xl">
+                <h2 id="teacherName" class="text-2xl font-bold mb-4 text-blue-800"></h2>
+                <p id="teacherSubject" class="mb-2 text-gray-600"></p>
+                <p id="teacherEmail" class="mb-4 text-gray-600"></p>
+                <div class="flex justify-end space-x-4">
+                    <button id="closeModal" class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 transition-colors duration-300">Close</button>
+                    <a id="contactTeacher" href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Contact Teacher</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const timetable = [
+            ['9:00 AM', 'Math', 'English', 'Science', 'History', 'Art'],
+            ['10:00 AM', 'English', 'Math', 'History', 'Science', 'Music'],
+            ['11:00 AM', 'Science', 'History', 'Math', 'Art', 'English'],
+            ['12:00 PM', 'Lunch', 'Lunch', 'Lunch', 'Lunch', 'Lunch'],
+            ['1:00 PM', 'History', 'Science', 'Art', 'Math', 'Science'],
+            ['2:00 PM', 'Art', 'Music', 'English', 'Music', 'Math']
+        ];
+
+        const teachers = {
+            'Math': { name: 'Uday Singh', subject: 'Mathematics', email: 'udays@school.com' },
+            'English': { name: 'Rajiv Ranjan', subject: 'English Literature', email: 'rajivr@school.com' },
+            'Science': { name: 'PL Roy', subject: 'General Science', email: 'plroy@school.com' },
+        };
+
+        function createTimetable() {
+            const timetableElement = document.getElementById('timetable');
+            timetable.forEach((row, rowIndex) => {
+                row.forEach((cell, cellIndex) => {
+                    const div = document.createElement('div');
+                    div.textContent = cell;
+                    div.className = `p-3 text-center border border-gray-200 transition-all duration-300 ease-in-out animate-fadeIn`;
+                    div.style.animationDelay = `${rowIndex * 0.1 + cellIndex * 0.05}s`;
+
+                    if (cellIndex === 0) {
+                        div.classList.add('font-bold', 'bg-gray-100');
+                    } else {
+                        switch (cell) {
+                            case 'Math': div.classList.add('bg-red-100', 'hover:bg-red-200'); break;
+                            case 'English': div.classList.add('bg-blue-100', 'hover:bg-blue-200'); break;
+                            case 'Science': div.classList.add('bg-green-100', 'hover:bg-green-200'); break;
+                            case 'History': div.classList.add('bg-yellow-100', 'hover:bg-yellow-200'); break;
+                            case 'Art': div.classList.add('bg-purple-100', 'hover:bg-purple-200'); break;
+                            case 'Music': div.classList.add('bg-pink-100', 'hover:bg-pink-200'); break;
+                            case 'Lunch': div.classList.add('bg-gray-100', 'hover:bg-gray-200'); break;
+                        }
+
+                        if (cell !== 'Lunch') {
+                            div.addEventListener('click', () => showTeacherDetails(cell));
+                        }
+                    }
+
+                    timetableElement.appendChild(div);
+                });
+            });
+        }
+
+        function showTeacherDetails(subject) {
+            const teacher = teachers[subject];
+            if (teacher) {
+                document.getElementById('teacherName').textContent = teacher.name;
+                document.getElementById('teacherSubject').textContent = `Subject: ${teacher.subject}`;
+                document.getElementById('teacherEmail').textContent = `Email: ${teacher.email}`;
+                document.getElementById('contactTeacher').href = `/${teacher.name.trim().toLowerCase()}.html`;
+                document.getElementById('modal').classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('closeModal').addEventListener('click', () => {
+            document.getElementById('modal').classList.add('hidden');
+        });
+
+        createTimetable();
+    </script>
+</body>
+</html>
