@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        .timetable {
+            margin: 50px auto;
+            width: 80%;
+            border-collapse: collapse;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .timetable th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #dee2e6;
+        }
+
+        .timetable td {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #dee2e6;
+        }
+        .timetable tr:hover {
+            background-color: #e2f3ff;
+            transition: background-color 0.3s ease-in-out;
+        }
+        @media (max-width: 768px) {
+            .timetable {
+                width: 100%;
+            }
+        }
+        .lunch-row {
+            background-color: #ffc107;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <center><h1>Class Timetable</h1></center>
+    <table class="table timetable table-bordered">
+        <thead>
+            <tr>
+                <th colspan="6">Timetable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Hours</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Morning</td>
+                <td onclick="window.location.href='automata.html';" style="cursor:pointer;">Automata</td>
+                <td onclick="window.location.href='daa.html';" style="cursor:pointer;">DAA</td>
+                <td>Agile</td>
+                <td onclick="window.location.href='daa.html';" style="cursor:pointer;">DAA</td>
+                <td onclick="window.location.href='daa.html';" style="cursor:pointer;">DAA</td>
+            </tr>
+            <tr>
+                <td>Machine Learning</td>
+                <td onclick="window.location.href='automata.html';" style="cursor:pointer;">Automata</td>
+                <td>Full Stack</td>
+                <td>Agile</td>
+                <td>Logical Reasoning</td>
+            </tr>
+            <tr class="lunch-row">
+                <td colspan="6">Lunch</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Afternoon</td>
+                <td onclick="window.location.href='automata.html';" style="cursor:pointer;">Automata</td>
+                <td onclick="window.location.href='daa.html';" style="cursor:pointer;">DAA</td>
+                <td>Full Stack</td>
+                <td>Full Stack</td>
+                <td rowspan="2" style="vertical-align: middle; text-align: center;">Project</td>
+            </tr>
+            <tr>
+                <td onclick="window.location.href='daa.html';" style="cursor:pointer;">DAA</td>
+                <td>Agile</td>
+                <td>Machine Learning</td>
+                <td>Quant</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+</html>
