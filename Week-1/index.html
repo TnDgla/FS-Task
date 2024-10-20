@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Class Timetable</h1>
+    <div class="timetable-container">
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Timings</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 AM - 9:00 AM</td>
+                    <td class="teacher-cell agile" data-subject="Agile Software" data-teacher="Mr. John" data-cabin="101" data-phone="9748999900">Agile Software</td>
+                    <td class="teacher-cell cp" data-subject="CP" data-teacher="Ms. Smith" data-cabin="102" data-phone="0987654321">CP</td>
+                    <td class="teacher-cell agile" data-subject="Agile Software" data-teacher="Mr. John" data-cabin="101" data-phone="9748999900">Agile Software</td>
+                    <td class="teacher-cell cp" data-subject="CP" data-teacher="Ms. Smith" data-cabin="102" data-phone="0987654321">CP</td>
+                    <td class="teacher-cell machine-learning" data-subject="Machine Learning" data-teacher="Ms. Lisa" data-cabin="103" data-phone="5554443333">Machine Learning</td>
+                </tr>
+                <tr>
+                    <td>9:00 AM - 10:00 AM</td>
+                    <td class="teacher-cell automata" data-subject="Automata" data-teacher="Mr. Mark" data-cabin="104" data-phone="6667778888">Automata</td>
+                    <td class="teacher-cell english" data-subject="English" data-teacher="Ms. Sara" data-cabin="105" data-phone="2221113333">English</td>
+                    <td class="teacher-cell english" data-subject="English" data-teacher="Ms. Sara" data-cabin="105" data-phone="2221113333">English</td>
+                    <td class="teacher-cell automata" data-subject="Automata" data-teacher="Mr. Mark" data-cabin="104" data-phone="6667778888">Automata</td>
+                    <td class="teacher-cell sports" data-subject="Sports" data-teacher="Mr. Mike" data-cabin="106" data-phone="7778889999">Sports</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td class="teacher-cell agile" data-subject="Agile Software" data-teacher="Mr. John" data-cabin="101" data-phone="9748999900">Agile Software</td>
+                    <td class="teacher-cell cp" data-subject="CP" data-teacher="Ms. Smith" data-cabin="102" data-phone="0987654321">CP</td>
+                    <td class="teacher-cell agile" data-subject="Agile Software" data-teacher="Mr. John" data-cabin="101" data-phone="9748999900">Agile Software</td>
+                    <td class="teacher-cell cp" data-subject="CP" data-teacher="Ms. Smith" data-cabin="102" data-phone="0987654321">CP</td>
+                    <td class="teacher-cell project" data-subject="Project" data-teacher="Ms. Lisa" data-cabin="103" data-phone="5554443333">Project</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM - 12:00 PM</td>
+                    <td class="teacher-cell automata" data-subject="Automata" data-teacher="Mr. Mark" data-cabin="104" data-phone="6667778888">Automata</td>
+                    <td class="teacher-cell english" data-subject="English" data-teacher="Ms. Sara" data-cabin="105" data-phone="2221113333">English</td>
+                    <td class="teacher-cell english" data-subject="English" data-teacher="Ms. Sara" data-cabin="105" data-phone="2221113333">English</td>
+                    <td class="teacher-cell automata" data-subject="Automata" data-teacher="Mr. Mark" data-cabin="104" data-phone="6667778888">Automata</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="lunch">Lunch Break</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM - 2:00 PM</td>
+                    <td class="teacher-cell agile" data-subject="Agile Software" data-teacher="Mr. John" data-cabin="101" data-phone="9748999900">Agile Software</td>
+                    <td class="teacher-cell cp" data-subject="CP" data-teacher="Ms. Smith" data-cabin="102" data-phone="0987654321">CP</td>
+                    <td class="teacher-cell agile" data-subject="Agile Software" data-teacher="Mr. John" data-cabin="101" data-phone="9748999900">Agile Software</td>
+                    <td class="teacher-cell cp" data-subject="CP" data-teacher="Ms. Smith" data-cabin="102" data-phone="0987654321">CP</td>
+                    <td class="teacher-cell project" data-subject="Project" data-teacher="Ms. Lisa" data-cabin="103" data-phone="5554443333">Project</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM - 3:00 PM</td>
+                    <td class="teacher-cell automata" data-subject="Automata" data-teacher="Mr. Mark" data-cabin="104" data-phone="6667778888">Automata</td>
+                    <td class="teacher-cell english" data-subject="English" data-teacher="Ms. Sara" data-cabin="105" data-phone="2221113333">English</td>
+                    <td class="teacher-cell english" data-subject="English" data-teacher="Ms. Sara" data-cabin="105" data-phone="2221113333">English</td>
+                    <td class="teacher-cell automata" data-subject="Automata" data-teacher="Mr. Mark" data-cabin="104" data-phone="6667778888">Automata</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3:00 PM - 4:00 PM</td>
+                    <td class="teacher-cell machine-learning" data-subject="Machine Learning" data-teacher="Ms. Lisa" data-cabin="103" data-phone="5554443333">Machine Learning</td>
+                    <td class="teacher-cell agile" data-subject="Agile Software" data-teacher="Mr. John" data-cabin="101" data-phone="9748999900">Agile Software</td>
+                    <td class="teacher-cell cp" data-subject="CP" data-teacher="Ms. Smith" data-cabin="102" data-phone="0987654321">CP</td>
+                    <td class="teacher-cell automata" data-subject="Automata" data-teacher="Mr. Mark" data-cabin="104" data-phone="6667778888">Automata</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
