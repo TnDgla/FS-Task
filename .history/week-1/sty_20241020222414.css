@@ -1,0 +1,74 @@
+body {
+    background-color: #f8f9fa; 
+}
+
+.heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem; 
+    color: #343a40;
+    font-weight: bold; 
+}
+
+.table {
+    margin: 20px auto;
+    border: 2px solid black; 
+    border-collapse: collapse;
+}
+
+.weekdays th {
+    background-color: #343a40; 
+    color: white; 
+}
+
+.details {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s ease, color 0.3s ease; 
+}
+
+.details:hover {
+    background-color: #e9ecef; 
+    transform: scale(1.02);
+    color: #007bff; 
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); 
+    border: 2px solid #007bff; 
+}
+
+.lunch {
+    background-color: #f7df1e; 
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem; 
+}
+
+.table th, .table td {
+    border: 2px solid black; 
+    padding: 15px; 
+}
+
+.modal {
+   
+}
+
+.modal .dialog {
+    max-width: 500px;
+}
+
+.modal .content {
+    border-radius: 5px;
+}
+
+.modal .header {
+    background-color: #343a40; 
+    color: white; 
+}
+
+.modal .footer {
+    text-align: right; 
+}
+
+#additionalDetails {
+    font-style: italic;
+    color: #555; 
+}

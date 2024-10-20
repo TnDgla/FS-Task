@@ -1,0 +1,115 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2.8rem;
+    color: #1a237e;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.table {
+    margin: 30px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.weekdays th {
+    background-color: #1a237e;
+    color: white;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.details {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.details:hover {
+    background-color: #e8eaf6;
+    transform: translateY(-2px);
+    color: #1a237e;
+    box-shadow: 0 4px 12px rgba(26,35,126,0.2);
+}
+
+.lunch {
+    background-color: #ffd54f;
+    font-weight: 600;
+    text-align: center;
+    color: #424242;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.table th, .table td {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Modal Styling */
+.modal .modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.modal .modal-header {
+    background-color: #1a237e;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 15px 20px;
+}
+
+.modal .modal-footer {
+    border-top: 1px solid #e0e0e0;
+    padding: 15px 20px;
+}
+
+.modal .btn-primary {
+    background-color: #1a237e;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.modal .btn-primary:hover {
+    background-color: #283593;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26,35,126,0.2);
+}
+
+#additionalDetails {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+    
+    .table th, .table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
