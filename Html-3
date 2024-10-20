@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B Profile</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<h1>Shyam(Maths Teacher)</h1>
+
+<p><strong>Email:</strong> shyam@gmail.com</p>
+<p><strong>Phone:</strong> 1234567890</p>
+<p><strong>Office Hours:</strong> Mon, Wed, Fri (2:00 PM - 4:00 PM)</p>
+<a href="timetable.html">Back to Timetable</a>
+
+</body>
+</html>
