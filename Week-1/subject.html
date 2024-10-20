@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Subject Details</h1>
+    <div class="subject-details">
+        <p id="subject-info"></p>
+        <p id="teacher-info"></p>
+        <p id="cabin-info"></p>
+        <p id="phone-info"></p>
+        <a href="index.html">Back to Timetable</a>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const subject = urlParams.get('subject');
+        const teacher = urlParams.get('teacher');
+        const cabin = urlParams.get('cabin');
+        const phone = urlParams.get('phone');
+
+        document.getElementById('subject-info').textContent = `Subject: ${subject}`;
+        document.getElementById('teacher-info').textContent = `Teacher: ${teacher}`;
+        document.getElementById('cabin-info').textContent = `Cabin: ${cabin}`;
+        document.getElementById('phone-info').textContent = `Phone: ${phone}`;
+    </script>
+</body>
+</html>
