@@ -16,13 +16,3 @@ function showDetails(subject) {
     alert(`You clicked on: ${subject}\n${details}`);
 }
 
-function applyHoverEffect() {
-    const links = document.querySelectorAll('.timetable a');
-
-    links.forEach(link => {
-        const subject = link.textContent.trim();
-        link.classList.add(`hover-${subject}`);
-    });
-}
-
-document.addEventListener('DOMContentLoaded', applyHoverEffect);
