@@ -8,17 +8,17 @@ h1{
 }
 
 table {
-    width: 100%;
-    margin-top: 20px;
-    border: 1px solid black;
+    width: 100 %;
+    margin-top: 20 px;
+    border: 1 px solid black;
 }
 
 th, td {
-    border: 1px solid #000;
+    border: 1 px solid #000;
     text-align: center;
-    padding: 10px;
-    width: 100px;
-    height:50px;
+    padding: 10 px;
+    width: 100 px;
+    height:50 px;
 }
 thead{
     background-color: lightcoral;
