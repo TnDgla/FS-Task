@@ -1,0 +1,16 @@
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.bg-light {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.table td:hover {
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+.clicked {
+    background-color: rgb(127, 201, 245) !important;
+}
