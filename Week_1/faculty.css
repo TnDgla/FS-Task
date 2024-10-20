@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.First {
+    padding: 20px;
+    background-color: lightgoldenrodyellow;
+    margin: 50px auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}

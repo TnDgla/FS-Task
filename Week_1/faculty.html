@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faculty details</title>
+    <link rel="stylesheet" href="faculty.css">
+</head>
+<body>
+    <div class="First">
+        Faculty Information
+       <p id="details"></p>
+    </div>  
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        function showFaculty(subject) {
+            const teacher = {
+                'Machine Learning':'<b>PRESHIT MANGESH DESAI</b> <br>Email id: p_desai@gla.ac.in<br>Room: AB1 201<br> Contact: 8430922021',
+                'Machine Learning Lab':'<b>SHIVANSHU UPADHYAY</b><br> Email id: shiv@gla.ac.in<br>Room: AB1 106<br> Contact: 8294737267',
+                'Agile Software':'<b>NIKHIL GOVIL</b><br> Email id: govil_cs22@gla.ac.in<br>Room: AB1 301<br> Contact: 9537056328',
+                'Logical':'<b>JAY PRAKASH GARG</b><br> Email id: jay_prakash_cs22@gla.ac.in<br>Room: AB3 202<br> Contact: 9329567290',
+                'Group Discussion': '<b>DR. ANJALI MEHRA</b><br> Email id: a_mehra_cs22@gla.ac.in<br>Room: AB1 403<br> Contact: 9876054898',
+                'DAA':'<b>SOHIL KHAN</b> <br>Email id: khan_cs22@gla.ac.in<br>Room: AB1 203<br> Contact: 9768055462',
+                'DAA Lab':'<b>SOHIL KHAN</b><br> Email id: khan_cs22@gla.ac.in<br>Room: AB1 203<br> Contact: 9768055462',
+                'Quant':'<b>JAY PRAKASH GARG</b><br> Email id: jay_prakash_cs22@gla.ac.in<br>Room: AB3 202<br> Contact: 9329567290',
+                'PCPH':'<b>SURESH PRATAP SINGH</b><br> Email id: s.p.s_cs22@gla.ac.in<br>Room: AB1 302<br> Contact: 9450967356',
+                'Verbal':'<b>SHIV KUMAR</b><br> Email id: shiv_cs22@gla.ac.in<br>Room: AB3 202<br> Contact: 9940873420'
+            };
+
+            const info = teacher[subject];
+            if (info) {
+                document.getElementById('details').innerHTML = info;
+            } else {
+                document.getElementById('details').innerHTML = 'No information found for this subject.';
+            }
+        }
+        const subject = getQueryParam('subject');
+        showFaculty(subject);
+    </script>
+</body>
+</html>
