@@ -7,7 +7,7 @@ function showTeacher(subject) {
         'GROUP DISCUSSION': '<b>Dr. Anjali Mehra</b><br><br>Room: AB1 403, Contact: 76589865211',
         'MACHINE LEARNING LAB': '<b>Presit Deshai</b> - presit_desai_cs22@gla.ac.in<br><br>Room: AB1 202, Contact: 78156532895',
         'DATA STRUCTURES AND ALGORITHM': '<b>Armendra Singh</b> - Armendra_singh_cs22@gla.ac.in<br><br>Room: AB1 413, Contact: 87255665452',
-        'FULL_STACK': '<b>Govind Jha</b> - govind_jha_cs22@gla.ac.in<br><br>Room: AB9 109, Contact: 8901234567','Lunch':'<b>Chalo Aunty ke samose khane</b> - auntySamose@gla,ac.in<br><br>Location: Patli gali mein , Contact: 911, Payment: GPAY only** ', 
+        'FULL_STACK': '<b>Govind Jha</b> - govind_jha_cs22@gla.ac.in<br><br>Room: AB9 109, Contact: 8901234567' 
     };
 
     
