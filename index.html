@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Class Timetable</h1>
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Hours</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 AM</td>
+                    <td><a href="#" onclick="showDetails('Science')">Science</a></td>
+                    <td><a href="#" onclick="showDetails('Maths')">Maths</a></td>
+                    <td><a href="#" onclick="showDetails('Science')">Science</a></td>
+                    <td><a href="#" onclick="showDetails('Maths')">Maths</a></td>
+                    <td><a href="#" onclick="showDetails('Arts')">Arts</a></td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td><a href="#" onclick="showDetails('Social')">Social</a></td>
+                    <td><a href="#" onclick="showDetails('Hindi')">Hindi</a></td>
+                    <td><a href="#" onclick="showDetails('English')">English</a></td>
+                    <td><a href="#" onclick="showDetails('Social')">Social</a></td>
+                    <td><a href="#" onclick="showDetails('Sports')">Sports</a></td>
+                </tr>
+               
+                <tr >
+                    <td>11:00 AM</td>
+                    <td class="lunch-row" colspan="5">Lunch Break</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td><a href="#" onclick="showDetails('Science')">Science</a></td>
+                    <td><a href="#" onclick="showDetails('Maths')">Maths</a></td>
+                    <td><a href="#" onclick="showDetails('Science')">Science</a></td>
+                    <td><a href="#" onclick="showDetails('Maths')">Maths</a></td>
+                    <td rowspan="2"><a href="#" onclick="showDetails('Project')">Project</a></td>
+                </tr>
+                <tr>
+                    <td>4:00 PM</td>
+                    <td><a href="#" onclick="showDetails('Social')">Social</a></td>
+                    <td><a href="#" onclick="showDetails('Hindi')">Hindi</a></td>
+                    <td><a href="#" onclick="showDetails('English')">English</a></td>
+                    <td><a href="#" onclick="showDetails('Social')">Social</a></td>
+                
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
