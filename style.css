@@ -1,45 +1,63 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
     background-color: #ffffff;
     color: #330e2f;
 }
-.main-con{
-    margin:3% auto;
-    width: 85%;
-    height: 100vh;
 
+/* Main container */
+.main-con {
+    margin: 3% auto;
+    width: 85%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.main-con h1{
+
+/* Header */
+.main-con h1 {
     text-align: center;
     font-size: 3em;
     font-family: "Droid Sans Mono Slashed", cursive;
+    margin-bottom: 20px;
 }
-.table-con{
+
+/* Table container */
+.table-con {
     width: 100%;
-    height: 82vh;
+    height: auto;
     margin: auto;
-    overflow: hidden;
+    overflow-x: auto;
     box-shadow: 0 4px 8px 0 rgb(139, 119, 119), 0 6px 20px 0 rgba(255, 252, 252, 0.19);
     border: 1px solid #cc1414;
     font-size: 20px;
-    font-family: "Droid Sans Mono Slashed",cursive;
+    font-family: "Droid Sans Mono Slashed", cursive;
 }
+
+/* Table styling */
 table {
     width: 100%;
     text-align: center;
+    border-collapse: collapse;
 }
+
 th, td {
     padding: 22px;
     border: 1px solid green;
 }
-.table-con tr{
+
+tr {
     background-color: wheat;
-    border:1px black solid;
+    border: 1px black solid;
 }
+
 th {
     text-transform: uppercase;
 }
+
+/* Box hover effect */
 .box {
     background-color: lightgray;
     border-radius: 3px;
@@ -47,11 +65,14 @@ th {
     box-shadow: 12px 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-.box:hover{
+
+.box:hover {
     background-color: wheat;
-    transform: scale(1.1); /* Slight scaling to give a card-like effect */
+    transform: scale(1.05); /* Reduced scaling for a smoother effect */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add more shadow on hover */
 }
+
+/* Blinking animation */
 @keyframes blink {
     0% { background-color: green; }
     50% { background-color: lightgreen; }
@@ -62,3 +83,69 @@ th {
     animation: blink 1s infinite;
 }
 
+/* Media queries for responsiveness */
+
+/* Large laptops/desktops */
+@media (max-width: 1200px) {
+    .main-con {
+        width: 90%;
+    }
+
+    .main-con h1 {
+        font-size: 2.5em;
+    }
+
+    .table-con {
+        font-size: 18px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .main-con {
+        width: 95%;
+    }
+
+    .main-con h1 {
+        font-size: 2em;
+    }
+
+    .table-con {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 16px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .main-con {
+        width: 100%;
+    }
+
+    .main-con h1 {
+        font-size: 1.5em;
+    }
+
+    .table-con {
+        font-size: 14px;
+        height: auto;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    /* Table scrolling for small screens */
+    .table-con {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+}
