@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timetable th, .timetable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.timetable th {
+    background-color: red;
+    color: white;
+}
+
+.lunch-row {
+    background-color: orange;
+    font-weight: bold;
+}
+
+.timetable a {
+    text-decoration: none;
+    color: #333;
+}
+
+.timetable a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+tbody td:hover{
+    color: blue;
+}
+
+.hover-Science { color: #FF6347 !important; }   
+.hover-Maths { color: #4169E1 !important; }    
+.hover-Arts { color: #BA55D3 !important; }      
+.hover-Social { color: #FFD700 !important; }   
+.hover-Hindi { color: #8B4513 !important; }     
+.hover-English { color: #32CD32 !important; }  
+.hover-Game { color: #FF4500 !important; }     
+.hover-Project { color: #20B2AA !important; } 
