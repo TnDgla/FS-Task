@@ -1,0 +1,206 @@
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --accent-color: #45b7d1;
+    --background-color: #f7fff7;
+    --text-color: #2d3436;
+    --light-text-color: #ffffff;
+    --hover-color: #feca57;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .container-fluid {
+    padding: 0 15px;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .timetable {
+    background-color: var(--light-text-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+  }
+  
+  .timetable th {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .timetable td {
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .timetable .subject {
+    background-color: #e8eaf6;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .timetable .subject::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--hover-color);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  .timetable .subject:hover::before {
+    transform: translateY(0);
+  }
+  
+  .timetable .subject a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+  }
+  
+  .timetable .subject:hover a {
+    color: var(--text-color);
+  }
+  
+  .timetable .subject p {
+    margin: 0;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+  }
+  
+  .timetable .subject:hover p {
+    transform: translateY(-5px);
+  }
+  
+  .timetable .subject .teacher {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 0.5rem;
+    font-style: italic;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .timetable .subject:hover .teacher {
+    transform: translateY(5px);
+    opacity: 0.7;
+  }
+  
+  .teacher-details {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: var(--light-text-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .teacher-details .card-body {
+    padding: 2rem;
+  }
+  
+  .teacher-details .card-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .teacher-details .card-text {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .teacher-details h3 {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .teacher-details p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .teacher-details .btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transition: all 0.3s ease;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: var(--text-color);
+  }
+  
+  .teacher-details .btn-primary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .timetable th,
+    .timetable td {
+      padding: 0.75rem;
+    }
+  
+    .timetable .subject p {
+      font-size: 0.85rem;
+    }
+  
+    .timetable .subject .teacher {
+      font-size: 0.75rem;
+    }
+  
+    .teacher-details .card-body {
+      padding: 1.5rem;
+    }
+  
+    .teacher-details .card-title {
+      font-size: 1.75rem;
+    }
+  
+    .teacher-details .card-text {
+      font-size: 1.1rem;
+    }
+  }
