@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Profile</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<h1>Mr.Ram(Science Teacher)</h1>
+
+<p><strong>Email:</strong>Ram@gmail.com</p>
+<p><strong>Phone:</strong> 1234567800</p>
+<p><strong>Office Hours:</strong> Mon,Tue, Wed (2:00 PM - 4:00 PM)</p>
+<a href="timetable.html">Back to Timetable</a>
+
+</body>
+</html>

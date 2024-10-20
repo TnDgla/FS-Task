@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color:black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 15px;
+}
+
+th {
+    background-color:skyblue;
+    color: white;
+}
+
+td:hover {
+    background-color: skyblue;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    color:rgb(68, 68, 184);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
