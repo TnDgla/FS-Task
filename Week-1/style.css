@@ -45,6 +45,10 @@ th, td{
     padding: 10px;
 }
 
+thead:not(thead:first-child):hover, td:not(td:first-child):hover{
+    background-color: antiquewhite;
+}
+
 thead:first-child, td:first-child{
     background-color: rgba(59, 175, 243, 0.8);
     color: white;
