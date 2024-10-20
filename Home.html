@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .timetable-table th, .timetable-table td {
+            text-align: center;
+            padding: 20px;
+        }
+        .timetable-table td a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .timetable-table td:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Class Timetable</h2>
+        <table class="table table-bordered timetable-table">
+            <thead class="table-dark">
+                <tr>
+                    <th>Time</th>
+                    <th>Subject</th>
+                    <th>Teacher</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 - 10:00</td>
+                    <td><a href="./Teacher.html" target="_blank">Mathematics</a></td>
+                    <td><a href="./Teacher.html" target="_blank">Mr. Johnson</a></td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td><a href="./Teacher2.html" target="_blank">Physics</a></td>
+                    <td><a href="./Teacher2.html" target="_blank">Ms. Smith</a></td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td><a href="./Teacher3.html" target="_blank">Chemistry</a></td>
+                    <td><a href="./Teacher3.html" target="_blank">Mr. Gupta</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <strong>LUNCH</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>01:00 - 02:00</td>
+                    <td><a href="./Teacher4.html" target="_blank">Computer</a></td>
+                    <td><a href="./Teacher4.html" target="_blank">Mr. Patel</a></td>
+                </tr>
+                <tr>
+                    <td>02:00 - 03:00</td>
+                    <td><a href="./Teacher5.html" target="_blank">Biology</a></td>
+                    <td><a href="./Teacher5.html" target="_blank">Ms. Tiwari</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
