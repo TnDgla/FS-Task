@@ -1,0 +1,26 @@
+
+h1{
+    text-align :center;
+    color: lightcoral;
+}
+.light{
+    background-color: bisque;
+}
+
+table {
+    width: 100 %;
+    margin-top: 20 px;
+    border: 1 px solid black;
+}
+
+th, td {
+    border: 1 px solid #000;
+    text-align: center;
+    padding: 10 px;
+    width: 100 px;
+    height:50 px;
+}
+thead{
+    background-color: lightcoral;
+}
+
