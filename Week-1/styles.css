@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0px 4px 8px rgba(2, 4, 4, 0.412);
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #8dc4f4;
+    color: white;
+}
+
+td a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+td.time-column {
+    background-color: #c2d6e7;
+    font-weight: bold;
+    color: #333;
+    width: 200px;
+}
+
+td a {
+    background-color: transparent;
+}
+
+td a.agile:hover {
+    background-color: #add8e6; /* Light Blue */
+}
+
+td a.daa:hover {
+    background-color: #f8cfcf; /* Light Pink */
+}
+
+td a.ml:hover {
+    background-color: #f7d794; /* Light Orange */
+}
+
+td a.english:hover {
+    background-color: #e8d5f7; /* Light Purple */
+}
+
+td a.automata:hover {
+    background-color: #d6f7d7; /* Light Green */
+}
+
+td a:hover {
+    opacity: 0.85;
+}
+
+.lunch {
+    background-color: #59c7896d;
+    font-weight: bold;
+}
+
+.subject-container {
+    text-align: left;
+}
+
+.details {
+    text-align: left;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .back-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
