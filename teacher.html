@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .details {
+            padding: 20px;
+            background-color: #f2f2f2;
+            margin: 50px auto;
+            width: 50%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="details">
+        <h2>Teacher Details</h2>
+        <p id="teacherDetails"></p>
+    </div>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        function showTeacherDetails(subject) {
+            const teacher = {
+                'Machine Learning': '<b>Jagdish Kumar</b> - jagdishkumar@gla.ac.in<br>Room: AB1 201, Contact: 791558602',
+                'Theory Of Automata': '<b>Shubham Mishra</b> - shubhammishra_@gla.ac.in<br>Room: AB9 106, Contact: 9616304550',
+                'Agile Software Development': '<b> Madhu Sudan Kumar</b> - madhusudankumar_cs22@gla.ac.in<br>Room: AB3 301, Contact: 7488044629',
+                'Logical Reasoning': '<b>Ayush Gupta</b> - ayush_gupta_cs22@gla.ac.in<br>Room: AB3 202, Contact: 81551123865',
+                'Group Discussion': '<b>Dr. Anjali Mehra</b><br>Room: AB1 403, Contact: 76589865211',
+                'DAA': '<b>Sohail Khan</b> - sohailkhan_cs22@gla.ac.in<br>Room: AB1 413, Contact: 7900352613',
+                'FullStack': '<b>Shiv Kumar Verma</b> - shiv_kumar_verma_cs22@gla.ac.in<br>Room: AB9 109, Contact: 8901234567'
+            };
+
+            const details = teacher[subject];
+            if (details) {
+                document.getElementById('teacherDetails').innerHTML = details;
+            } else {
+                document.getElementById('teacherDetails').innerHTML = 'No details found for this subject.';
+            }
+        }
+        const subject = getQueryParam('subject');
+        showTeacherDetails(subject);
+    </script>
+</body>
+</html>
