@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    color: #330e2f;
+}
+
+/* Main container */
+.main-con {
+    margin: 3% auto;
+    width: 85%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.main-con h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: "Droid Sans Mono Slashed", cursive;
+    margin-bottom: 20px;
+}
+
+/* Table container */
+.table-con {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow-x: auto;
+    box-shadow: 0 4px 8px 0 rgb(139, 119, 119), 0 6px 20px 0 rgba(255, 252, 252, 0.19);
+    border: 1px solid #cc1414;
+    font-size: 20px;
+    font-family: "Droid Sans Mono Slashed", cursive;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 22px;
+    border: 1px solid green;
+}
+
+tr {
+    background-color: wheat;
+    border: 1px black solid;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+/* Box hover effect */
+.box {
+    background-color: lightgray;
+    border-radius: 3px;
+    transition: transform 0.4s ease, box-shadow 0.5s ease, background-color 0.4s ease;
+    box-shadow: 12px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: wheat;
+    transform: scale(1.05); /* Reduced scaling for a smoother effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add more shadow on hover */
+}
+
+/* Blinking animation */
+@keyframes blink {
+    0% { background-color: green; }
+    50% { background-color: lightgreen; }
+    100% { background-color: green; }
+}
+
+.blinking {
+    animation: blink 1s infinite;
+}
+
+/* Media queries for responsiveness */
+
+/* Large laptops/desktops */
+@media (max-width: 1200px) {
+    .main-con {
+        width: 90%;
+    }
+
+    .main-con h1 {
+        font-size: 2.5em;
+    }
+
+    .table-con {
+        font-size: 18px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .main-con {
+        width: 95%;
+    }
+
+    .main-con h1 {
+        font-size: 2em;
+    }
+
+    .table-con {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 16px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .main-con {
+        width: 100%;
+    }
+
+    .main-con h1 {
+        font-size: 1.5em;
+    }
+
+    .table-con {
+        font-size: 14px;
+        height: auto;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    /* Table scrolling for small screens */
+    .table-con {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+}
