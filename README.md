@@ -1,3 +1,6 @@
+![Screenshot 2024-10-20 200028](https://github.com/user-attachments/assets/5d265ab0-1ba3-44d7-b346-8575ca741dd9)
+![Screenshot 2024-10-20 200041](https://github.com/user-attachments/assets/b6999138-f1ee-4dfd-88a0-ab6f62093e22)
+
 **Class Time-Table and Subject Details**
 
 Features
@@ -34,3 +37,4 @@ Features
    Time-Table Highlighting: JavaScript function to map real-time hours and highlight the current class.
    Subject Click Event: Allows users to click on any subject in the time-table to navigate to a detailed subject page.
    Dynamic Data Rendering: Extracts subject details based on URL parameters and populates the subject details page.
+
