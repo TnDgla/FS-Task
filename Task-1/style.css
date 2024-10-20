@@ -1,0 +1,116 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Ensures header stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Background Image Section */
+.background-container {
+    background-image: url('background.png'); /* Replace with your image URL */
+    background-size: cover; /* Ensures image covers the entire container */
+    background-position: center;
+    height: 400px; /* Set height of the container */
+    position: relative;
+    padding-top: 100px; /* Add padding equal to the header's height */
+    color: white; /* Set text color for better contrast */
+    display: flex;
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    text-align: center; /* Optional: Center text alignment */
+}
+
+/* Style the text */
+.background-container h1 {
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background to text */
+    padding: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+    
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .background-container h1 {
+        font-size: 2em; /* Adjust text size for smaller screens */
+    }
+}
+#about{
+    display: flex;              
+    justify-content: center;     
+    align-items: center;        
+    height: 10vh;              
+    text-align: center;          
+}
+#about1{
+    display: flex;              
+    justify-content: center;     
+    align-items: center;        
+    height: 1vh;              
+    text-align: center;          
+}
+#info{
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+.ladki{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: 10%;
+    width: 80%;
+}
+.ladki1{
+    width: 45%;
+    color: gray;
+}
+.name{
+    margin-left: 40%;
+    margin-top: 10px;
+    width: 20%;
+}
+.photo{
+    margin-top: 30px;
+}
