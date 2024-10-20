@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
 }
 .First {
-    padding: 20px;
+    padding: 20 px;
     background-color: lightgoldenrodyellow;
-    margin: 50px auto;
-    width: 50%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin: 50 px auto;
+    width: 50 %;
+    border: 1 px solid #ccc;
+    border-radius: 5 px;
     text-align: center;
 }
