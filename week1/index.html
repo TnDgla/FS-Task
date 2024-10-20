@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <!-- <link rel="stylesheet" href="./bootstrap.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="timetable">
+        <div class="row">
+            <div class="col" style=" background-color: #a2a8d3;">
+                <h1>Time Table</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="he"> <h3>Time/day</h3></div>
+            <div class="col" id="he"><h3>Mon</h3></div>
+            <div class="col" id="he"><h3>Tue</h3></div>
+            <div class="col" id="he"><h3>Wed</h3></div>
+            <div class="col" id="he"><h3>Thu</h3></div>
+            <div class="col" id="he"><h3>Fri</h3></div>
+        </div>
+        <div class="row">
+            <div class="col" id="time">08:00 AM-09:00 Am</div>
+            <div class="col" id="sub">
+                PQRH 0001 <br>
+                AB - IX <br>
+                Room - 006</div>
+            <div class="col" id="sub">
+                BCSE 1251 <br>
+                AB - IX <br>
+                Room - 010 <br>
+            </div>
+            <div class="col" id="sub">
+                BCSE 1251 <br>
+                AB - IX <br>
+                Room - 511A
+            </div>
+            <div class="col">----</div>
+            <div class="col" id="sub">BCSC 0812 <br>
+                AB - IX <br>
+                Room - 010</div>
+        </div>
+        <div class="row">
+            <div class="col" id="time">09:00 AM-10:00 Am</div>
+            <div class="col" id="sub">
+                PCPH 0002 <br>
+                AB - I <br>
+                Room - 413
+            </div>
+            <div class="col" id="sub">
+                BCSC 0022 <br>
+                AB - IX <br>
+                Room - 010
+            </div>
+            <div class="col" id="sub">
+                PCPH 0002 <br>
+                AB - I <br>
+                Room - 413
+            </div>
+            <div class="col">----</div>
+            <div class="col" id="sub">BCSC 0812 <br>
+                AB - IX <br>
+                Room - 010</div>
+        </div>
+        <div class="row">
+            <div class="col" id="time" >10:00 AM-11:00 Am</div>
+            <div class="col">----</div>
+            <div class="col" id="sub">BCSC 0011 <br> AB - IX <br>
+                Room - 010</div>
+            <div class="col" id="sub">BCSC 0011 <br>
+                AB - IX <br>
+                Room - 010</div>
+            <div class="col" id="sub">PVRH 0001 <br>
+                AB - IX <br>
+                Room - 010</div>
+            <div class="col" id="sub">----</div>
+        </div>
+        <div class="row">
+            <div class="col" id="time">11:00 AM-12:00 PM</div>
+            <div class="col">----</div>
+            <div class="col" id="sub">PQRH 0002 <br>
+                AB - IX <br>
+                Room - 010</div>
+            <div class="col" id="sub">PGDH 0001 <br>
+                AB - IX <br>
+                Room - 010</div>
+            <div class="col" id="sub">BCSE 0053 <br>
+                AB - IX <br>
+                Room - 010</div>
+            <div class="col" id="sub">BCSE 0105 <br>
+                AB - IX <br>
+                Room - 010</div>
+        </div>
+        <div class="row">
+            <div class="col" id="time" style="flex-basis: 0;flex-grow: 0.201;">12:00 PM-01:00 PM</div>
+            <div class="col" style="background-color: #a2a8d3;"><h2>Lunch</h2></div>
+
+        </div>
+        <div class="row">
+            <div class="col" id="time">01:00 PM-02:00 PM</div>
+            <div class="col" id="sub">BCSC 0022 <br>
+                AB - IX <br>
+                Room - 010</div>
+            <div class="col" id="sub">BCSE 0053 <br>
+                AB - IX <br>
+                Room - 010</div>
+            <div class="col" id="sub">BCSE 0053 <br>
+                AB - IX <br>
+                Room - 011</div>
+            <div class="col">----</div>
+            <div class="col">----</div>
+        </div>
+        <div class="row">
+            <div class="col" id="time">02:00 PM - 03:00 PM</div>
+            <div class="col" id="sub">BCSC 0011 <br>
+                AB - IX <br>
+                Room - 409</div>
+            <div class="col" id="sub">BCSE 0105 <br>
+                AB - IX <br>
+                Room - 010</div>
+            <div class="col" id="sub">BCSC 0812 <br>
+                AB - IX <br>
+                Room - 010</div>
+            <div class="col">----</div>
+            <div class="col" id="sub">BCSE 0133 <br>
+                AB - I <br>
+                Room - 223</div>
+        </div>
+        <div class="row">
+            <div class="col" id="time">03:00 PM-04:00 PM</div>
+            <div class="col">----</div>
+            <div class="col">----</div>
+            <div class="col" id="sub">BCSC 0812 <br>
+                AB - IX <br>
+                Room - 010</div>
+            <div class="col">----</div>
+            <div class="col" id="sub">
+                BCSE 0133 <br>
+                AB - I <br>
+                Room - 223</div>
+        </div>
+    </div>
+</div>
+    <script>
+        var sun=document.querySelectorAll("#sub")
+        sun.forEach((ele)=>ele.addEventListener('click',()=>{
+            window.location.href="./teacher.html"
+        }))
+    </script>
+</body>
+
+</html>

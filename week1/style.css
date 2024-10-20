@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timetable {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(35, 34, 34);
+    border-radius: 8px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.row div {
+    margin: 2px;
+    flex-grow: 1;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    background-color: #e7eaf6;
+    border-radius: 15px;
+}
+
+#time {
+    background-color: #38598b;
+    color: #fff;
+}
+
+#he {
+    background-color: #113f67;
+    color: #fff;
+}
+
+/* Media Queries */
+
+/* Small screens: 600px and below */
+@media (max-width: 600px) {
+    .timetable {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .row div {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Medium screens: 600px to 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    .timetable {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .row div {
+        width: 3rem;
+        height: 3rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Large screens: 901px and above */
+@media (min-width: 901px) {
+    .timetable {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .row div {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+}
