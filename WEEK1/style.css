@@ -1,0 +1,17 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  margin-top: 20px;
+}
+
+.subject-cell {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subject-cell:hover {
+  background-color: #f1f1f1;
+}
