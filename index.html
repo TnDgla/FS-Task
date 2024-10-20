@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tilt"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 small">
+                <H1>TIME TABLE</H1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col head"><h5>Hours</h5></div>
+            <div class="col head"><h5>Monday</h5></div>
+            <div class="col head"><h5>Tuesday</h5></div>
+            <div class="col head"><h5>Wednesday</h5></div>
+            <div class="col head"><h5>Thursday</h5></div>
+            <div class="col head"><h5>Friday</h5></div>
+        </div>
+        <div class="row">
+            <div class="col"><h6 class="time">10 AM - 11 AM</h6></div>
+            <button onclick="Details('Science','Laboratory')" class="col">
+                <h6>Science</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lab">Lab</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+            <button onclick="Details('Maths','Lecture')" class="col">
+                <h6>Maths</h6>
+                <p>Dr. Michael Green</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room2">411</div>
+                </div>
+            </button>
+            <button onclick="Details('Science','Laboratory')" class="col">
+                <h6>Science</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lab">Lab</div>
+                    <div class="room2">411</div>
+                </div>
+            </button>
+            <button onclick="Details('Maths','Lecture')" class="col">
+                <h6>Maths</h6>
+                <p>Dr. Michael Green</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+            <button onclick="Details('Arts','Laboratory')" class="col">
+                <h6>Arts</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lab">Lab</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col"><h6 class="time">11 AM - 12 PM</h6></div>
+            <button onclick="Details('Social','Lecture')" class="col">
+                <h6>Social</h6>
+                <p>Ms. Emily Carter</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+            <button onclick="Details('Hindi','Lecture')" class="col">
+                <h6>Hindi</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+            <button onclick="Details('English','Lecture')" class="col">
+                <h6>English</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room2">411</div>
+                </div>
+            </button>
+            <button onclick="Details('Social','Lecture')" class="col">
+                <h6>Social</h6>
+                <p>Ms. Emily Carter</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+            <button onclick="Details('Sports','Laboratory')" class="col">
+                <h6>Sports</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lab">Lab</div>
+                    <div class="room2">411</div>
+                </div>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col col-2"><h6 class="time">12 PM - 1 PM</h6></div>
+            <div class="col lunch"><h5>Lunch</h5></div>
+        </div>
+        <div class="row">
+            <div class="col"><h6 class="time">1 PM - 2 PM</h6></div>
+            <button onclick="Details('Science','Laboratory')" class="col">
+                <h6>Science</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lab">Lab</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+            <button onclick="Details('Maths','Lecture')" class="col">
+                <h6>Maths</h6>
+                <p>Dr. Michael Green</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+            <button onclick="Details('Science','Lecture')" class="col">
+                <h6>Science</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room2">411</div>
+                </div>
+            </button>
+            <button onclick="Details('Maths','Lecture')" class="col">
+                <h6>Maths</h6>
+                <p>Dr. Michael Green</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+            <button onclick="Details('Project','Laboratory')" class="col">
+                <h6>Project</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lab">Lab</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col"><h6 class="time">2 PM - 3 PM</h6></div>
+            <button onclick="Details('Social','Lecture')" class="col">
+                <h6>Social</h6>
+                <p>Ms. Emily Carter</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+            <button onclick="Details('Hindi','Lecture')" class="col">
+                <h6>Hindi</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room2">411</div>
+                </div>
+            </button>
+            <button onclick="Details('English','Lecture')" class="col">
+                <h6>English</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room2">411</div>
+                </div>
+            </button>
+            <button onclick="Details('Social','Lecture')" class="col">
+                <h6>Social</h6>
+                <p>Ms. Emily Carter</p>
+                <div class="btns">
+                    <div class="lect">Lect</div>
+                    <div class="room1">211</div>
+                </div>
+            </button>
+            <button onclick="Details('Project','Laboratory')" class="col">
+                <h6>Project</h6>
+                <p>Mr. John Anderson</p>
+                <div class="btns">
+                    <div class="lab">Lab</div>
+                    <div class="room2">411</div>
+                </div>
+            </button>
+        </div>
+    </div>
+    <script>
+        function Details(sub, type){
+            let detailsPage="details.html?sub="+sub+"&type="+type;
+            window.location.href=detailsPage;
+        }
+    </script>
+</body>
+</html>
