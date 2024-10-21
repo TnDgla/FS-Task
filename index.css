@@ -1,0 +1,66 @@
+body {
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: floralwhite;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(11, 0, 0);
+    margin-top: 50px;
+}
+
+.hi {
+    text-align: center;
+    color: rebeccapurple ;
+    margin-bottom: 20px;
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.timetable th {
+    background-color: aquamarine;
+    color: plum;
+    padding: 18px;
+    border: 2px solid #ddd;
+}
+
+.timetable td {
+    padding: 15px;
+    border: 1px solid chartreuse;
+    text-align: center;
+    cursor: context-menu;
+}
+
+.lunch {
+    background-color: #ffcc80;
+    font-weight: bold;
+}
+
+.timetable tbody td:hover {
+    background-color: #e0f2f1;
+}
+
+.content{
+    top: 50px;
+    left:140px;
+    text-align: left;
+    position:absolute;
+    background: transparent;
+}
+.close {
+    position: absolute;
+    right: 21px;
+    font-size: 16px;
+    cursor: pointer;
+    color: blue;
+}
