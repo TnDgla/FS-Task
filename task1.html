@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+<style>
+    table, th, td ,caption {
+  border: 1px solid black;
+}
+    .main{
+        border: 2px solid black;
+        height: 280px;
+        width: 1000px;
+    }
+    caption{
+        border-bottom:2px solid black; ;
+        width: 1000px;
+        height: 40px;
+         font-size: 40px;
+    }
+    .lunch {
+    background-color: #eee6d4;
+    font-size: 20px;
+    padding-left: 350px;
+}
+.clickable:hover {
+    background-color: #e0e0e0;
+     
+}
+</style>
+ <body>
+    <div class="main">
+    <table>
+        <caption>Time Table</caption>
+         <tr>
+            <td> Hour</td>
+            <th>MONDAY</th>
+            <th>TUESDAY</th>
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+            <th >FRIDAY</th>
+           
+        </tr>
+        <tr>
+            <td>8:00AM-9:00AM</td>
+            <td class="clickable">Softskills</td>
+            <td class="clickable">Fullstack</td>
+            <td class="clickable">Fullstack</td>
+            <td class="clickable">Fullstack</td>
+            <td class="clickable">DAA lab</td>
+        </tr>
+        <tr>
+            <td  >9:00AM-10:00AM</td>
+            <td class="clickable">Competitive programming</td>
+            <td class="clickable">DAA</td>
+            <td class="clickable">Fullstack</td>
+            <td class="clickable">Automata</td>
+            <td class="clickable">DAA lab</td>
+        </tr>
+        <tr>
+            <td >10:00AM-11:00AM</td>
+            <td class="clickable">Agile</td>
+            <td class="clickable">Softskills</td>
+            <td class="clickable">Automata</td>
+            <td class="clickable">Automata</td>
+            <td class="clickable">Machine-learning</td>
+        </tr>
+        <tr>
+            <td>11:00AM-12:00AM</td>
+            <td class="clickable">Machine-learning</td>
+            <td class="clickable">Agile</td>
+            <td class="clickable">GDPI</td>
+            <td class="clickable">Softskills</td>
+            <td class="clickable">Automata</td>
+        </tr>
+         
+        <tr>
+            <td>12:00PM-1:00PM</td>
+          <td  colspan="5"  class="lunch">Lunch</td>
+            
+            
+        </tr>
+        <tr>
+            <td>1:00PM-2:00PM</td>
+            <td class="clickable">Agile</td>
+            <td class="clickable">Automata tut</td>
+            <td class="clickable">Machine-learning</td>
+            <td class="clickable">DAA</td>
+            <td class="clickable"></td>
+        </tr>
+        <tr>
+            <td>2:00PM-3:00PM</td>
+            <td class="clickable"></td>
+            <td class="clickable">Fullstack</td>
+            <td class="clickable"> Agile</td>
+            <td class="clickable">Machine-learning lab</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3:00PM-4:00PM</td>
+            <td class="clickable">Automata</td>
+            <td class="clickable"></td>
+            <td class="clickable">Machine-learning</td>
+            <td class="clickable">Machine-learning lab</td>
+            <td></td>
+        </tr>
+         
+    </table>
+    </div>
+    <script>
+         const c = document.querySelectorAll('.clickable');
+            c.forEach(cell => {
+            cell.addEventListener('click', function() {
+                window.location.href = 'teacherdetails.html';
+            });
+        });
+    </script>
+    
+ </body>
+ </html>
