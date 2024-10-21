@@ -1,0 +1,45 @@
+body {
+    font-family: 'math', sans-serif;
+    background-color: #f0f4f8; 
+    color: #333;
+}
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.timetable th, .timetable td {
+    border: 1px solid #242424; 
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.3s; 
+}
+.timetable th {
+    background-color:#2e595a; 
+    color: #ffffff; 
+    font-weight: bold;
+}
+.timetable td {
+    background-color: #f1faee; 
+}
+.timetable tr:hover td {
+    background-color: #e9f5f2; 
+}
+.lunch-row {
+    background-color: #ffd60a; 
+    color: #333; 
+    font-weight: bold;
+}
+.timetable a {
+    text-decoration: none;
+    color: #1d3557; 
+    font-weight: bold; 
+}
+.timetable a:hover {
+    text-decoration: underline; 
+    color: #457b9d; 
+}

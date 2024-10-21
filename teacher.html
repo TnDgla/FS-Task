@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8; /* Light background color */
+        }
+        .container {
+            margin-top: 10%;
+            background-color: #ffffff; /* White background for the card */
+            padding: 30px; /* Increased padding for better spacing */
+            border-radius: 10px; /* Slightly larger border radius for smooth corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            transition: transform 0.3s; /* Smooth transition for hover effect */
+        }
+        .container:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+        .teacher-name {
+            font-size: 2.5em; /* Increased font size for name */
+            font-weight: bold;
+            color: #1d3557; /* Dark blue for teacher name */
+        }
+        .subject, .contact {
+            margin-top: 5%; 
+            margin-left: 25%;
+            margin-right: 25%;
+            padding: 30px; 
+            background-color: #e9f5f2; /* Very light teal for subject and contact sections */
+            border-radius: 5px; /* Slightly rounded corners */
+        }
+        .subject h4, .contact h4 {
+            color: #457b9d; /* Teal color for headers */
+        }
+        .back-button {
+            margin-top: 40px;
+            background-color: #1d3557; /* Dark blue button */
+            border: none; /* Remove border */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        .back-button:hover {
+            background-color: #457b9d; /* Lighter blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="teacher-name" id="teacherName">Teacher's Name</h1>
+        <div class="subject" id="subject">
+            <h4>Subject:</h4>
+            <p id="subjectDetails">Details about the subject taught by the teacher.</p>
+        </div>
+        <div class="contact">
+            <h4>Contact Information:</h4>
+            <p>Email: <span id="email">example@example.com</span></p>
+            <p>Phone: <span id="phone">123-456-7890</span></p>
+        </div>
+        <a href="index.html" class="btn back-button">Back to Timetable</a>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const teacherName = params.get('name');
+
+        const teacherDetails = {
+            'Mr. Smith': {
+                subject: 'Science',
+                email: 'mrsmith@example.com',
+                phone: '123-456-7890'
+            },
+            'Ms. Brown': {
+                subject: 'Mathematics',
+                email: 'msbrown@example.com',
+                phone: '234-567-8901'
+            },
+            'Mr. White': {
+                subject: 'Arts',
+                email: 'mrwhite@example.com',
+                phone: '345-678-9012'
+            },
+            'Ms. Davis': {
+                subject: 'Project Management',
+                email: 'msdavis@example.com',
+                phone: '456-789-0123'
+            }
+        };
+
+        if (teacherName && teacherDetails[teacherName]) {
+            document.getElementById('teacherName').textContent = teacherName;
+            document.getElementById('subjectDetails').textContent = teacherDetails[teacherName].subject;
+            document.getElementById('email').textContent = teacherDetails[teacherName].email;
+            document.getElementById('phone').textContent = teacherDetails[teacherName].phone;
+        }
+    </script>
+</body>
+</html>
