@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timetable</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-gray-100 p-8">
+    <div class="container mx-auto">
+      <table class="table-auto w-full border-collapse border border-gray-800">
+        <!-- Time Table Heading -->
+        <tr class="bg-gray-200">
+          <th
+            colspan="6"
+            class="text-center p-4 font-bold text-xl border border-gray-800"
+          >
+            TIME TABLE
+          </th>
+        </tr>
+        <!-- Days Row -->
+        <tr class="bg-gray-100">
+          <th class="border border-gray-800 p-2"></th>
+          <th class="border border-gray-800 p-2">Mon</th>
+          <th class="border border-gray-800 p-2">Tue</th>
+          <th class="border border-gray-800 p-2">Wed</th>
+          <th class="border border-gray-800 p-2">Thu</th>
+          <th class="border border-gray-800 p-2">Fri</th>
+        </tr>
+        <!-- Time Slots -->
+        <tr>
+          <th class="border border-gray-800 p-2 bg-gray-100">10:00 - 11:00</th>
+          <td class="TOC border border-gray-800 p-2 bg-blue-100 cursor-pointer">
+            TOC
+          </td>
+          <td class="FS border border-gray-800 p-2 bg-green-100 cursor-pointer">
+            Full Stack
+          </td>
+          <td class="FS border border-gray-800 p-2 bg-green-100 cursor-pointer">
+            Full Stack
+          </td>
+          <td class="AS border border-gray-800 p-2 bg-yellow-100">
+            Agile Software
+          </td>
+          <td class="TOC border border-gray-800 p-2 bg-blue-100 cursor-pointer">
+            TOC
+          </td>
+        </tr>
+        <tr>
+          <th class="border border-gray-800 p-2 bg-gray-100">11:00 - 12:00</th>
+          <td class="cp cursor-pointer border border-gray-800 p-2 bg-red-100">
+            CP
+          </td>
+          <td
+            class="dsa cursor-pointer border border-gray-800 p-2 bg-purple-100"
+          >
+            DSA
+          </td>
+          <td
+            class="dsa cursor-pointer border border-gray-800 p-2 bg-purple-100"
+          >
+            DSA
+          </td>
+          <td class="FS cursor-pointer border border-gray-800 p-2 bg-green-100">
+            Full Stack
+          </td>
+          <td class="TOC cursor-pointer border border-gray-800 p-2 bg-blue-100">
+            TOC
+          </td>
+        </tr>
+        <!-- Lunch Row -->
+        <tr class="bg-gray-100">
+          <th class="border border-gray-800 p-2 bg-gray-100">12:00 - 01:00</th>
+          <td
+            colspan="5"
+            class="text-center border border-gray-800 p-2 bg-orange-100"
+          >
+            LUNCH
+          </td>
+        </tr>
+        <!-- Afternoon Time Slots -->
+        <tr>
+          <th class="border border-gray-800 p-2 bg-gray-100">01:00 - 02:00</th>
+          <td class="QT cursor-pointer border border-gray-800 p-2 bg-pink-100">
+            QUANT
+          </td>
+          <td
+            class="dsa cursor-pointer border border-gray-800 p-2 bg-purple-100"
+          >
+            DSA
+          </td>
+          <td
+            class="dsa cursor-pointer border border-gray-800 p-2 bg-purple-100"
+          >
+            DSA
+          </td>
+          <td class="TOC cursor-pointer border border-gray-800 p-2 bg-blue-100">
+            TOC
+          </td>
+          <td
+            class="AS cursor-pointer border border-gray-800 p-2 bg-yellow-100"
+          >
+            Agile Software
+          </td>
+        </tr>
+        <tr>
+          <th class="border border-gray-800 p-2 bg-gray-100">02:00 - 03:00</th>
+          <td class="cp cursor-pointer border border-gray-800 p-2 bg-red-100">
+            CP
+          </td>
+          <td
+            class="dsa cursor-pointer border border-gray-800 p-2 bg-purple-100"
+          >
+            DSA
+          </td>
+          <td
+            class="dsa cursor-pointer border border-gray-800 p-2 bg-purple-100"
+          >
+            DSA
+          </td>
+          <td class="FS cursor-pointer border border-gray-800 p-2 bg-green-100">
+            Full Stack
+          </td>
+          <td class="TOC cursor-pointer border border-gray-800 p-2 bg-blue-100">
+            TOC
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
