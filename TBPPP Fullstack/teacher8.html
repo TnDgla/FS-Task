@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Lee - Project Teacher</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+        .teacher-card { 
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .teacher-card:hover { transform: scale(1.02); }
+        .teacher-img { width: 100%; height: auto; border-radius: 10px; }
+        .teacher-name { font-size: 1.5rem; font-weight: bold; color: #343a40; }
+        .teacher-subject { font-size: 1.2rem; color: #6c757d; }
+        .bio { margin-top: 10px; font-size: 1rem; color: #495057; }
+        .contact-info { margin-top: 20px; }
+        .contact-info p { margin: 5px 0; }
+        .back-button { 
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .back-button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="teacher-card text-center">
+                <img src="project-teacher.jpg" alt="Mr. Lee" class="teacher-img">
+                <h2 class="teacher-name">Mr. David Lee</h2>
+                <h4 class="teacher-subject">Project Teacher</h4>
+                <p class="bio">
+                    Mr. Lee specializes in guiding students through project-based learning, fostering innovation and critical thinking skills.
+                </p>
+                <div class="contact-info">
+                    <h5>Contact Information:</h5>
+                    <p>Email: david.lee@example.com</p>
+                    <p>Phone: (123) 456-7896</p>
+                </div>
+                <button class="back-button" onclick="window.history.back();">Back to Timetable</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Timetable</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 100px;
+    }
+    .table-bordered {
+      width: 60%;
+      margin: 0 auto;
+      border-collapse: separate;
+      border: 1px solid rgb(187, 181, 181);;
+    }
+    .table-bordered th, 
+    .table-bordered td, 
+    .table-bordered tr{
+      border: 1px solid rgb(187, 181, 181); /* Cell border color */
+      text-align: center;
+      padding: 15px;
+      vertical-align: middle;
+    }
+    .table-bordered .thead-light tr,
+    .table-bordered .thead-light th{
+        border: 1px solid rgb(187, 181, 181);;
+    }
+    td:hover {
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    .subject:hover {
+      text-decoration: underline;
+    }
+    .table-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .lunch {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <table class="table table-bordered">
+            <!-- Header Row with the Title -->
+            <thead class="thead-light">
+              <tr>
+                <th colspan="6" class="table-title-row"><h4>Class Timetable</h4></th>
+              </tr>
+              <tr>
+                <th>Hours</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>
+            </thead>
+            
+            <!-- Table Body -->
+            <tbody>
+              <tr>
+                <td>9:00 - 10:00</td>
+                <td><a href="teacher1.html" class="subject">Science</a></td>
+                <td><a href="teacher2.html" class="subject">Maths</a></td>
+                <td><a href="teacher1.html" class="subject">Science</a></td>
+                <td><a href="teacher2.html" class="subject">Maths</a></td>
+                <td><a href="teacher3.html" class="subject">Arts</a></td>
+              </tr>
+              <tr>
+                <td>10:00 - 11:00</td>
+                <td><a href="teacher4.html" class="subject">Social</a></td>
+                <td><a href="teacher5.html" class="subject">Hindi</a></td>
+                <td><a href="teacher6.html" class="subject">English</a></td>
+                <td><a href="teacher4.html" class="subject">Social</a></td>
+                <td><a href="teacher7.html" class="subject">Sports</a></td>
+              </tr>
+              <tr class="lunch">
+                <td colspan="6" class="text-center">Lunch</td>
+              </tr>
+              <tr>
+                <td>11:00 - 12:00</td>
+                <td><a href="teacher1.html" class="subject">Science</a></td>
+                <td><a href="teacher2.html" class="subject">Maths</a></td>
+                <td><a href="teacher1.html" class="subject">Science</a></td>
+                <td><a href="teacher2.html" class="subject">Maths</a></td>
+                <!-- Project spans 11:00 - 1:00 -->
+                <td rowspan="2" class="text-center"><a href="teacher8.html" class="subject">Project</a></td>
+              </tr>
+              <tr>
+                <td>12:00 - 1:00</td>
+                <td><a href="teacher4.html" class="subject">Social</a></td>
+                <td><a href="teacher5.html" class="subject">Hindi</a></td>
+                <td><a href="teacher6.html" class="subject">English</a></td>
+                <td><a href="teacher4.html" class="subject">Social</a></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
