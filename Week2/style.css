@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+}
+.cont{
+    display:flex;
+    margin-top:-24px;
+}
+.con{
+    width:50vw;
+    height:100vh;
+}
+.con img{
+    width: 50vw;
+    height:100vh;
+}
+
+
+
+.con1{
+    width:50vw;
+    background-color: bisque;
+}
+.logo{
+    margin-left:10vw;
+    display: block;
+    width:30px;
+    height:10px;
+    display:flex;
+    gap:35px;
+}
+.logo img{
+    width:35vh;
+    display: block;
+    height:25vh;
+    margin-top:60px;
+}
+.form1{
+    margin-top:40vh;
+    margin-left:auto;
+    margin-right:auto;
+    width:30vw;
+
+
+    background-color:bisque;
+    color:rgb(30, 26, 30);
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding:16px;
+}
+
+.f{
+    display:flex;
+}
+
+.con1 a{
+    margin-left:36vh;
+    color:rgb(20, 19, 19);
+    text-decoration: none;
+}
+.con1 button{
+    width:28vw;
+    border-radius: 5px;
+    margin-top:20px;
+    padding:10px 20px;
+    background-color:blue;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
