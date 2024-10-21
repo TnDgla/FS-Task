@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Details</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Teacher Details</h2>
+        <div id="teacher-info">
+        </div>
+        <a href="index.html" class="btn btn-info ">Back to Timetable</a>
+    </div>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        window.onload = function() {
+            const subject = getQueryParam('subject');
+            const teacher = getQueryParam('teacher');
+            const department = getQueryParam('department');
+            const contact = getQueryParam('contact');
+            const teacherInfo = 
+        "<p><strong>Subject:</strong> " + subject + "</p>" +
+        "<p><strong>Teacher:</strong> " + teacher + "</p>" +
+        "<p><strong>Department:</strong> " + department + "</p>"+
+        "<p><strong>Contact:</strong> " + contact + "</p>";
+            document.getElementById('teacher-info').innerHTML = teacherInfo;
+        };
+    </script>
+</body>
+</html>
+
