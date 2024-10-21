@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    border:2px solid rgb(194,157,110);
+    background-color:rgba(116, 97, 171, 0.251);
+    color:rgb(85, 76, 25);
+}
+.table th{
+    background-color: rgb(48, 74, 48);
+}
+.table td{
+    color:rgb(49, 87, 103);
+}
+.table td:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.content {
+    background-color:rgb(161, 213, 161);
+    color:rgb(30, 26, 30);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #00796b;
+}
