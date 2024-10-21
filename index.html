@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Optional: Add some custom styles */
+        .hover-effect {
+            cursor: pointer;
+        }
+    </style>
+    <title>Timetable</title>
+</head>
+<body class="bd">
+    <div class="container">
+        <table class="table" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th colspan="6" class="text-center" style="border: 2px solid black;">Timetable</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="6" style="vertical-align: middle;">Hours</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Science&teacher=Mr. Singh&department=Science%20Department&contact=123546'">Science</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Maths&teacher=Mr. khan&department=Mathematics%20Department&contact=81818181'">Maths</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Science&teacher=Mr. Singh&department=Science%20Department&contact=123546'">Science</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Maths&teacher=Mr. khan&department=Mathematics%20Department&contact=81818181'">Maths</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Arts&teacher=Mr.Kumar&department=Arts%20Department&contact=91445575'">Arts</td>
+                </tr>
+                <tr>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Social&teacher=Mr. Verma&department=Social%20Studies%20Department&contact=52464646'">Social</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Hindi&teacher=Mr. Patel&department=Languages%20Department&contact=22244455'">Hindi</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=English&teacher=Ms.Pooja&department=Languages%20Department&contact=9163545'">English</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Social&teacher=Mr. Verma&department=Social%20Studies%20Department&contact=52464646'">Social</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Sports&teacher=Coach%20Carter&department=Physical%20Education%20Department'">Sports</td>
+                </tr>
+                <tr class="lunch-row">
+                    <td colspan="5" class="text-center">Lunch</td>
+                </tr>
+                <tr>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Science&teacher=Mr. Singh&department=Science%20Department&contact=123546'">Science</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Maths&teacher=Mr. khan&department=Mathematics%20Department&contact=81818181'">Maths</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Science&teacher=Mr. Singh&department=Science%20Department&contact=123546'">Science</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Maths&teacher=Mr. khan&department=Mathematics%20Department&contact=81818181'">Maths</td>
+                    <td rowspan="2" style="vertical-align: middle;" class="hover-effect" onclick="location.href='teacher.html?subject=Project&teacher=Various&department=Project%20Supervisor&contact=7744589'">Project</td>
+                </tr>
+                <tr>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Social&teacher=Mr. Verma&department=Social%20Studies%20Department&contact=52464646'">Social</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Hindi&teacher=Mr. Patel&department=Languages%20Department&contact=22244455'">Hindi</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=English&teacher=Ms.Pooja&department=Languages%20Department&contact=9163545'">English</td>
+                    <td class="hover-effect" onclick="location.href='teachers.html?subject=Social&teacher=Mr. Verma&department=Social%20Studies%20Department&contact=52464646'">Social</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
