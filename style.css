@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(140, 237, 237);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    border-width: 5px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 2px solid black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+th:hover{
+    background-color: rgb(122, 129, 129);
+}
+td:hover{
+    background-color: rgb(77, 125, 187);
+    color: white;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+.lunch {
+    background-color: #f2f2f2;
+}
+
+.hours {
+    font-weight: bold;
+}
