@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: bisque;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+}
+
+td a:hover {
+    color: blue;
+    text-decoration: underline;
+}
