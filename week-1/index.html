@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        tr td a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">XYZ SCHOOL</a>
+        </div>
+      </nav>
+   </header>
+   <div class="container my-4">
+    <div class="tab">
+      <table class="table table-bordetable-danger  table-striped text-center">
+        <thead class="thead-dark">
+          <tr class="days">
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time font-weight-bold">I</td>
+            <td class="table-primary" data-toggle="tooltip" title="Mr. Anil"><a href="./teacher-details.html?teacher=Mr.Anil">Hindi</a></td>
+            <td class="table-danger" data-toggle="tooltip" title="Mrs. Anuja"><a href="teacher-details.html?teacher=Mrs.Anuja">English</a></td>
+            <td class="table-info" data-toggle="tooltip" title="Mr. Bhargwa"><a href="teacher-details.html?teacher=Mr.Bhargwa">Science</a></td>
+            <td class="table-success" data-toggle="tooltip" title="Mrs. Shhweta"><a href="teacher-details.html?teacher=Mrs.Shhweta">Drawing</a></td>
+            <td class="table-warning" data-toggle="tooltip" title="Mr. Chandra"><a href="teacher-details.html?teacher=Mr.Chandra">Social</a></td>
+          </tr>
+          <tr>
+            <td class="time font-weight-bold">II</td>
+            <td class="table-info" data-toggle="tooltip" title="Mr. Bhargwa"><a href="teacher-details.html?teacher=Mr.Bhargwa">Science</a></td>
+            <td class="table-primary" data-toggle="tooltip" title="Mr. Anil"><a href="teacher-details.html?teacher=Mr.Anil">Hindi</a></td>
+            <td class="table-success" data-toggle="tooltip" title="Mrs. Shhweta"><a href="teacher-details.html?teacher=Mrs.Shhweta">Drawing</a></td>
+            <td class="table-danger" data-toggle="tooltip" title="Mrs. Anuja"><a href="teacher-details.html?teacher=Mrs.Anuja">English</a></td>
+            <td class="table-warning" data-toggle="tooltip" title="Mr. Chandra"><a href="teacher-details.html?teacher=Mr.Chandra">Social</a></td>
+            
+          </tr>
+          <tr>
+            <td class="time font-weight-bold"></td>
+            <td>L</td>
+            <td>U</td>
+            <td>N</td>
+            <td>C</td>
+            <td>H</td>
+          </tr>
+          <tr>
+            <td class="time font-weight-bold">III</td>
+            <td class="table-success" data-toggle="tooltip" title="Mrs. Shhweta"><a href="teacher-details.html?teacher=Mrs.Shhweta">Drawing</a></td>
+         <td class="table-warning" data-toggle="tooltip" title="Mr. Chandra"><a href="teacher-details.html?teacher=Mr.Chandra">Social</a></td>
+          <td class="table-primary" data-toggle="tooltip" title="Mr. Anil"><a href="teacher-details.html?teacher=Mr.Anil">Hindi</a></td>  
+          <td class="table-danger" data-toggle="tooltip" title="Mrs. Anuja"><a href="teacher-details.html?teacher=Mrs.Anuja">English</a></td>
+            <td class="table-info" data-toggle="tooltip" title="Mr. Bhargwa"><a href="teacher-details.html?teacher=Mr.Bhargwa">Science</a></td>
+            
+            
+          </tr>
+          <tr>
+            <td class="time font-weight-bold">IV</td>
+            <td class="table-warning" data-toggle="tooltip" title="Mr. Chandra"><a href="teacher-details.html?teacher=Mr.Chandra">Social</a></td>
+            <td class="table-danger" data-toggle="tooltip" title="Mrs. Anuja"><a href="teacher-details.html?teacher=Mrs.Anuja">English</a></td>
+            <td class="table-success" data-toggle="tooltip" title="Mrs. Shhweta"><a href="teacher-details.html?teacher=Mrs.Shhweta">Social</a></td>
+            <td class="table-info" data-toggle="tooltip" title="Mr. Bhargwa"><a href="teacher-details.html?teacher=Mr.Bhargwa">Science</a></td>
+            <td class="table-primary" data-toggle="tooltip" title="Mr. Anil"><a href="teacher-details.html?teacher=Mr.Anil">Hindi</a></td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <script src="./script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>
