@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Class Timetable</h1>
+        <table class="table table-bordered border border-3 border-black">
+            <thead>
+                <tr >
+                    <th class="border border-2 border-black" id="id">Time</th>
+                    <th class="border border-2 border-black" id="id">Monday</th>
+                    <th class="border border-2 border-black" id="id">Tuesday</th>
+                    <th class="border border-2 border-black" id="id">Wednesday</th>
+                    <th class="border border-2 border-black" id="id">Thursday</th>
+                    <th class="border border-2 border-black" id="id">Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="fw-bolder border border-2 border-black" id="id">10:00 - 11:00</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr.Sohail Khan" data-subject="Data Structures">Data
+                        Structures<br>Mr.Sohail Khan</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr.Shiv Kumar" data-subject="Verbal Aptitude">Verbal
+                        Aptitude<br>Mr.Shiv Kumar
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr.Maddy" data-subject="Agile Software Development">Agile
+                        Software Development<br>Mr.Maddy</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mrs. Ayush" data-subject="Logical Reasoning">Logical
+                        Reasoning<br>Mrs. Ayush
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jaggeet" data-subject="Machine Learning">Machine
+                        Learning<br>Mr. Jaggeet</td>
+                </tr>
+                <tr>
+                    <td class="fw-bolder border border-2 border-black" id="id">11:00 - 12:00</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jaggeet" data-subject="Machine Learning">Machine
+                        Learning<br>Mr. Jaggeet
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mrs. Ayush" data-subject="GD/PI">GD/PI<br>Mrs. Ayush
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jay" data-subject="DAA">DAA<br>Mr. Jay
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mrs. Ayush" data-subject="Quant">Quant<br>Mrs. Ayush
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jay" data-subject="CP">CP<br>Mr. Jay
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fw-bolder border border-2 border-black" id="id">12:00 - 1:00</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jay" data-subject="CP">CP<br>Mr. Jay
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr.Sohail Khan" data-subject="Data Structures">Data
+                        Structures<br>Mr.Sohail Khan</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mrs. Ayush" data-subject="Logical Reasoning">Logical
+                        Learning<br>Mrs. Ayush
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jaggeet" data-subject="Machine Learning">Machine
+                        Learning<br>Mr. Jaggeet</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jay" data-subject="DAA">DAA<br>Mr. Jay
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fw-bolder border border-2 border-black" id="id">1:00 - 2:00</td>
+                    <td colspan="5" class="text-center fw-bolder fs-5" id="id">LUNCH</td>
+                </tr>
+                <tr>
+                    <td class="fw-bolder border border-2 border-black" id="id">2:00 - 3:00</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jaggeet" data-subject="Machine Learning">Machine
+                        Learning<br>Mr. Jaggeet
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mrs. Ayush" data-subject="GD/PI">GD/PI<br>Mrs. Ayush
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jay" data-subject="DAA">DAA<br>Mr. Jay
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mrs. Ayush" data-subject="Quant">Quant<br>Mrs. Ayush
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jay" data-subject="CP">CP<br>Mr. Jay
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fw-bolder border border-2 border-black" id="id">3:00 - 4:00</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr.Sohail Khan" data-subject="Data Structures">Data
+                        Structures<br>Mr.Sohail Khan</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr.Shiv Kumar" data-subject="Verbal Aptitude">Verbal
+                        Aptitude<br>Mr.Shiv Kumar
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr.Maddy" data-subject="Agile Software Development">Agile
+                        Software Development<br>Mr.Maddy</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mrs. Ayush" data-subject="Logical Reasoning">Logical
+                        Reasoning<br>Mrs. Ayush
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jaggeet" data-subject="Machine Learning">Machine
+                        Learning<br>Mr. Jaggeet</td>
+                </tr>
+                <tr>
+                    <td class="fw-bolder border border-2 border-black" id="id">4:00 - 5:00</td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jaggeet" data-subject="Machine Learning">Machine
+                        Learning<br>Mr. Jaggeet
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mrs. Ayush" data-subject="GD/PI">GD/PI<br>Mrs. Ayush
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jay" data-subject="DAA">DAA<br>Mr. Jay
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mrs. Ayush" data-subject="Quant">Quant<br>Mrs. Ayush
+                    </td>
+                    <td class="timetable-cell border border-2 border-black" data-teacher="Mr. Jay" data-subject="CP">CP<br>Mr. Jay
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.timetable-cell').forEach(cell => {
+            cell.addEventListener('click', () => {
+                const teacher = cell.getAttribute('data-teacher');
+                const subject = cell.getAttribute('data-subject');
+                window.location.href = `details.html?teacher=${encodeURIComponent(teacher)}&subject=${encodeURIComponent(subject)}`;
+            });
+        });
+    </script>
+</body>
+
+</html>
