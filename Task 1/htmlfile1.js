@@ -1,5 +1,5 @@
 function showTeacher(subject) {
-    const teacher = {
+    const teachers = {
         'MACHINE LEARNING': '<b>Jagdish Kumar</b> - jagdishkumar@gla.ac.in<br><br>Room: AB1 201, Contact: 791558602',
         'THEORY OF AUTOMATA': '<b>Nitu Faujdar</b> - nitufaujdar_@gla.ac.in<br><br>Room: AB9 106, Contact: 8955622330',
         'AGILE SOFTWARE DEVELOPMENT': '<b>Sonal Singh</b> - sonalsingh_cs22@gla.ac.in<br><br>Room: AB3 301, Contact: 7617765062',
