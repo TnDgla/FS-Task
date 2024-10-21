@@ -1,0 +1,40 @@
+body {
+    background-color: hsl(256, 79%, 64%);
+}
+a{
+    text-decoration: none;
+}
+.timetable-container {
+    margin: 50px auto;
+    width: 80%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.timetable-header {
+    background-color: #5a7fa3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    height: 80px;
+}
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+.lunch-row {
+    background-color: #ffc107;
+    font-weight: bold;
+}
+td:hover{
+    background-color: cyan;
+    color: white;
+    transition-duration: 0.25s;
+}
