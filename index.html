@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Class Timetable</title>
+    <style>
+        .timetable {
+            margin: 20px;
+            background-color: orchid;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .timetable th, .timetable td {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .clickable {
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .clickable:hover {
+            background-color: yellow;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container timetable">
+    <h2 class="text-center">Class Timetable</h2>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th class="clickable" onclick="openContact('Sohil Khan', 'DAA', 'SohilKhan@example.com')">Teacher 1</th>
+                <th class="clickable" onclick="openContact('Shiv Kumar', 'Full Stack', 'ShivKumar@example.com')">Teacher 2</th>
+                <th class="clickable" onclick="openContact('Ayesha Ali', 'Mathematics', 'AyeshaAli@example.com')">Teacher 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td class="clickable" onclick="openContact('Sohil Khan', 'DAA', 'SohilKhan@example.com')">DAA</td>
+                <td class="clickable" onclick="openContact('Shiv Kumar', 'Full Stack', 'ShivKumar@example.com')">Full Stack</td>
+                <td class="clickable" onclick="openContact('Ayesha Ali', 'Mathematics', 'AyeshaAli@example.com')">Mathematics</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td class="clickable" onclick="openContact('Sohil Khan', 'DAA', 'SohilKhan@example.com')">English</td>
+                <td class="clickable" onclick="openContact('Shiv Kumar', 'Full Stack', 'ShivKumar@example.com')">History</td>
+                <td class="clickable" onclick="openContact('Ayesha Ali', 'Mathematics', 'AyeshaAli@example.com')">Physics</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td class="clickable" onclick="openContact('Sohil Khan', 'DAA', 'SohilKhan@example.com')">Data Structures</td>
+                <td class="clickable" onclick="openContact('Shiv Kumar', 'Full Stack', 'ShivKumar@example.com')">JavaScript</td>
+                <td class="clickable" onclick="openContact('Ayesha Ali', 'Mathematics', 'AyeshaAli@example.com')">Chemistry</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td class="clickable" onclick="openContact('Sohil Khan', 'DAA', 'SohilKhan@example.com')">Algorithm Design</td>
+                <td class="clickable" onclick="openContact('Shiv Kumar', 'Full Stack', 'ShivKumar@example.com')">React JS</td>
+                <td class="clickable" onclick="openContact('Ayesha Ali', 'Mathematics', 'AyeshaAli@example.com')">Linear Algebra</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Teacher</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="teacherName"></p>
+                <p id="teacherSubject"></p>
+                <p id="teacherEmail"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function openContact(name, subject, email) {
+        document.getElementById('teacherName').innerText = 'Name: ' + name;
+        document.getElementById('teacherSubject').innerText = 'Subject: ' + subject;
+        document.getElementById('teacherEmail').innerText = 'Email: ' + email;
+        $('#contactModal').modal('show');
+    }
+</script>
+
+</body>
+</html>
