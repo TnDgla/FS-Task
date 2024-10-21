@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Teacher Details</title>
+</head>
+<body>
+    <header>
+        <h1>Teacher Details</h1>
+    </header>
+    <main>
+        <div class="teacher-info">
+            <h2 id="teacher-name"></h2>
+            <p><strong>Contact:</strong> <span id="teacher-email"></span></p>
+            <a href="mailto:" id="contact-button">Contact Teacher</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Class Timetable</p>
+    </footer>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const teacherName = params.get('name');
+        const teachers = {
+            "Shiv Kumar Verma": {
+                email: "jztshiva@gmail.com",
+            },
+            "Madhu Sudan Kumar": {
+                email: "madhusudan.kumar@gla.ac.in",
+            },
+            "Shubham Mishra": {
+                email: "shubham.mishra@gla.ac.in",
+            }
+        };
+
+        if (teachers[teacherName]) {
+            document.getElementById('teacher-name').innerText = teacherName;
+            document.getElementById('teacher-email').innerText = teachers[teacherName].email;
+            document.getElementById('contact-button').setAttribute('href', `mailto:${teachers[teacherName].email}`);
+        }
+    </script>
+</body>
+</html>
