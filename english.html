@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            width: 80%;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .container:hover {
+            transform: scale(1.02);
+        }
+        
+        .profile-card {
+            display: flex;
+            padding: 30px;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .profile-img img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid green;
+            object-fit: cover;
+            transition: border-color 0.3s ease;
+        }
+        
+        .profile-img img:hover {
+            border-color: gray;
+        }
+        
+        .profile-info {
+            max-width: 500px;
+        }
+        
+        .profile-info h1 {
+            font-size: 2.5rem;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+        
+        .profile-info h3 {
+            font-size: 1.5rem;
+            color: green;
+            margin-bottom: 20px;
+        }
+        
+        .profile-info p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: grey;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            font-size: 1rem;
+            color: #00796b;
+        }
+        
+        .contact-info p:hover {
+            color: green;
+            cursor: pointer;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-img">
+                <img src="https://img.freepik.com/premium-vector/vector-logo-illustration-teacher-mascot-cartoon-style_116762-8535.jpg?size=338&ext=jpg&ga=GA1.1.967060102.1729382400&semt=ais_hybrid" alt="Teacher Image">
+            </div>
+            <div class="profile-info">
+                <h1>Mr. Ankush</h1>
+                <h3>english Teacher</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sit molestiae recusandae error perspiciatis veniam repellat dolore nemo. Blanditiis quidem officia tempora, architecto cumque dolores accusamus iusto odit animi officiis?
+                </p>
+                <div class="contact-info">
+                    <p>Email: ankush.tyagi@gla.ac.in</p>
+                    <p>Phone: +91 9236321210</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
