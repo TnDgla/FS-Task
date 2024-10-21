@@ -1,0 +1,17 @@
+.col{
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
