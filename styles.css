@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #ed0101;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #a3cc00;
+    color: rgb(0, 0, 0);
+}
+
+table td {
+    background-color: #c907b6;
+}
+
+table a {
+    text-decoration: none;
+    color: #16ff0a;
+    transition: color 0.3s ease;
+}
+
+table a:hover {
+    color: #22fbff;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+.teacher-profile {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.teacher-name {
+    font-size: 24px;
+    color: #2900a6;
+    margin-bottom: 10px;
+}
+
+.teacher-info {
+    font-size: 18px;
+    color: #c13b3b;
+    margin-bottom: 15px;
+}
+
+.teacher-course {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #cc0099;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #22fff8;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
