@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Teacher</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Contact Teacher</h1>
+        <div id="teacher-details" class="mt-5">
+            <h3>Subject: <span id="subject-name"></span></h3>
+            <h4>Teacher Name: <span id="teacher-name"></span></h4>
+            <p>Email: <span id="teacher-email"></span></p>
+        </div>
+        <a href="index.html" class="btn btn-primary mt-4">Back to Timetable</a>
+    </div>
+
+    <script>
+        // Retrieve subject from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const subject = urlParams.get('subject');
+        
+        // Teacher information based on subject
+        const teacherInfo = {
+            "science": { name: "Mr. ram", email: "ram@example.com" },
+            "maths": { name: "Mrs. shayama", email: "shayama@example.com" },
+            "english": { name: "Ms. sita", email: "sita@example.com" },
+            "social": { name: "Mr. ayush", email: "ayush@example.com" },
+            "hindi": { name: "Mrs. arun", email: "arun@example.com" },
+            "arts": { name: "Ms. mansi", email: "mansi@example.com" },
+            "sports": { name: "Mr. abhay", email: "abhay@example.com" },
+            "project": { name: "Mr. harshi", email: "harshi@example.com" }
+        };
+
+        // Display teacher info based on the subject
+        if (teacherInfo[subject]) {
+            document.getElementById('subject-name').textContent = subject;
+            document.getElementById('teacher-name').textContent = teacherInfo[subject].name;
+            document.getElementById('teacher-email').textContent = teacherInfo[subject].email;
+        } else {
+            document.getElementById('teacher-details').innerHTML = "<h3>Subject not found!</h3>";
+        }
+    </script>
+</body>
+</html>
