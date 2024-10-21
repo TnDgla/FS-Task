@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    height: 50vh;
+    /* border: 2px solid black; */
+}
+
+td,
+th {
+    border: 2px solid black;
+}
+
+td {
+    text-align: center;
+    /* font-size: 36px; */
+    cursor: pointer;
+    transition: 200ms;
+}
+
+td:hover {
+    scale: 1.05;
+    /* filter: contrast(1); */
+}
