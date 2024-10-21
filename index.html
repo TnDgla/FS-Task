@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f7;
+            color: #333;
+        }
+
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+
+        th {
+            background-color: #4CAF50; /* Green header background */
+            color: white;
+        }
+
+        td a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+
+        td:hover {
+            background-color: #f9f9f9;
+        }
+
+     
+        tr:nth-child(3) th {
+            background-color: #ffebcc;
+            color: #333;
+        }
+
+        tr:nth-child(3) th[colspan="6"] {
+            background-color: #ffebcc;
+        }
+
+     
+        @media (max-width: 768px) {
+            table, tbody, th, td, tr {
+                display: block;
+            }
+
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td:before {
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                transform: translateY(-50%);
+            }
+
+            td:nth-of-type(1):before { content: "10:00 AM-11:00 AM"; }
+            td:nth-of-type(2):before { content: "11:00 AM-12:00 PM"; }
+            td:nth-of-type(3):before { content: "Lunch"; }
+            td:nth-of-type(4):before { content: "1:00 PM-2:00 PM"; }
+            td:nth-of-type(5):before { content: "2:00 PM-3:00 PM"; }
+        }
+    </style>
+</head>
+<body>
+
+    <table border="2" width="100%" cellpadding="6" cellspacing="2">
+        <tbody>
+            <tr>
+                <th colspan="6" align="center">Timetable</th>
+            </tr>
+            <tr>
+                <th>10:00 AM-11:00 AM</th>
+                <td><a href="teacher.html?subject=Mathematics">Mathematics</a></td>
+                <td><a href="teacher.html?subject=Physics">Physics</a></td>
+                <td><a href="teacher.html?subject=Chemistry">Chemistry</a></td>
+                <td><a href="teacher.html?subject=History">History</a></td>
+                <td><a href="teacher.html?subject=Biology">Biology</a></td>
+            </tr>
+            <tr>
+                <th>11:00 AM-12:00 PM</th>
+                <td><a href="teacher.html?subject=Physics">Physics</a></td>
+                <td><a href="teacher.html?subject=Mathematics">Mathematics</a></td>
+                <td><a href="teacher.html?subject=English">English</a></td>
+                <td><a href="teacher.html?subject=Chemistry">Chemistry</a></td>
+                <td><a href="teacher.html?subject=Geography">Geography</a></td>
+            </tr>
+            <tr>
+                <th>12:00 PM-1:00 PM</th>
+                <th colspan="6" align="center" style="background-color: #ffebcc;">Lunch</th>
+            </tr>
+            <tr>
+                <th>1:00 PM-2:00 PM</th>
+                <td><a href="teacher.html?subject=Mathematics">Mathematics</a></td>
+                <td><a href="teacher.html?subject=Physics">Physics</a></td>
+                <td><a href="teacher.html?subject=Chemistry">Chemistry</a></td>
+                <td><a href="teacher.html?subject=History">History</a></td>
+                <td><a href="teacher.html?subject=Biology">Biology</a></td>
+            </tr>
+            <tr>
+                <th>2:00 PM-3:00 PM</th>
+                <td><a href="teacher.html?subject=Physics">Physics</a></td>
+                <td><a href="teacher.html?subject=Mathematics">Mathematics</a></td>
+                <td><a href="teacher.html?subject=English">English</a></td>
+                <td><a href="teacher.html?subject=Chemistry">Chemistry</a></td>
+                <td><a href="teacher.html?subject=Geography">Geography</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
