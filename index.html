@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Home Screen Timetable -->
+    <div class="container mt-4" id="home">
+        <h2 class="text-center mb-4">Class Timetable</h2>
+        <table class="timetable table table-bordered">
+            <thead>
+                <tr>
+                    <th>Hours</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td onclick="showDetails('Mr. Sharma', 'Science')">Science</td>
+                    <td onclick="showDetails('Ms. Rao', 'Maths')">Maths</td>
+                    <td onclick="showDetails('Mr. Sharma', 'Science')">Science</td>
+                    <td onclick="showDetails('Ms. Rao', 'Maths')">Maths</td>
+                    <td onclick="showDetails('Mr. Mehta', 'Arts')">Arts</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td onclick="showDetails('Ms. Gupta', 'Social Studies')">Social Studies</td>
+                    <td onclick="showDetails('Mr. Patel', 'Hindi')">Hindi</td>
+                    <td onclick="showDetails('Ms. Verma', 'English')">English</td>
+                    <td onclick="showDetails('Ms. Gupta', 'Social Studies')">Social Studies</td>
+                    <td onclick="showDetails('Mr. Iyer', 'Physical Education')">Physical Education</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-info mt-3" onclick="showContactPage()">Contact Teacher</button>
+    </div>
+
+    <!-- Contact Page -->
+    <div class="container mt-4 contact-page" id="contact">
+        <h2 class="text-center mb-4">Contact Teacher</h2>
+        <p>For any issues, please contact the school administration at <a href="mailto:admin@school.com">admin@school.com</a>.</p>
+        <button class="btn btn-secondary mt-3" onclick="goBack()">Back to Timetable</button>
+    </div>
+
+    <!-- Teacher Details Modal -->
+    <div class="modal" id="teacherDetailsModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teacherName"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="subjectDetails"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

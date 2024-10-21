@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+.timetable th, .timetable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.timetable th {
+    background-color: #f2f2f2;
+}
+.timetable td:hover {
+    background-color: #e2e2e2;
+}
+.modal-content {
+    background-color: #f8f9fa;
+}
+.contact-page, .teacher-details {
+    display: none;
+}
