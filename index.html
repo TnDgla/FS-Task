@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Timetable</h1>
+        <section class="timetable">
+            <div class="timetable-row header">
+                <div class="timetable-cell">Time</div>
+                <div class="timetable-cell">Monday</div>
+                <div class="timetable-cell">Tuesday</div>
+                <div class="timetable-cell">Wednesday</div>
+                <div class="timetable-cell">Thursday</div>
+                <div class="timetable-cell">Friday</div>
+            </div>
+            <div class="timetable-row">
+                <div class="timetable-cell">10:00 AM-11:00 AM</div>
+                <div class="timetable-cell"><a href="#" data-subject="Agile Software Development">Agile Software Development</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Machine Learning">Machine Learning</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Theory Of Automata">Theory Of Automata</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="DAA">DAA</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="FullStack">FullStack</a></div>
+            </div>
+            <div class="timetable-row">
+                <div class="timetable-cell">11:00 AM-12:00 PM</div>
+                <div class="timetable-cell"><a href="#" data-subject="Machine Learning">Machine Learning</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Agile Software Development">Agile</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Group Discussion">Group Discussion</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Theory Of Automata">Automata</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Logical Reasoning">Logical Reasoning</a></div>
+            </div>
+            <div class="timetable-row lunch">
+                <div class="timetable-cell">12:00 PM-1:00 PM</div>
+                <div class="timetable-cell" colspan="5">Lunch</div>
+            </div>
+            <div class="timetable-row">
+                <div class="timetable-cell">1:00 PM-2:00 PM</div>
+                <div class="timetable-cell"><a href="#" data-subject="Agile Software Development">Agile Software Development</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Machine Learning">Machine Learning</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Theory Of Automata">Theory Of Automata</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="DAA">DAA</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="FullStack">FullStack</a></div>
+            </div>
+            <div class="timetable-row">
+                <div class="timetable-cell">2:00 PM-3:00 PM</div>
+                <div class="timetable-cell"><a href="#" data-subject="Machine Learning">Machine Learning</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Agile Software Development">Agile</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Group Discussion">Group Discussion</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Theory Of Automata">Automata</a></div>
+                <div class="timetable-cell"><a href="#" data-subject="Logical Reasoning">Logical Reasoning</a></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="subject-name"></h2>
+            <p id="teacher-info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
