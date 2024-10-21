@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="Time.css">
+
+</head>
+<body>
+    <div class="nav">
+        <h1>TimeTable</h1>
+        <div class="nmini">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teacher.html">Teacher Details</a></li>
+        </div>
+    </div>
+
+    <div class="before">
+        <p>Here Is Your Timetable</p>
+    </div>
+
+    <h2>Weekly Timetable</h2>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td onclick="showDetails('Math', 'Mr. Dileep', 30, 'mrsmith@gmail.com')">Math (Mr. Smith)</td>
+            <td onclick="showDetails('Science', 'Ms. Johnson', 28, 'msjohnson@gmail.com')">Science (Ms. Johnson)</td>
+            <td onclick="showDetails('History', 'Mrs. Lee', 35, 'mrslee@gmail.com')">History (Mrs. Lee)</td>
+            <td onclick="showDetails('Math', 'Mr. Smith', 30, 'mrsmith@gmail.com')">Math (Mr. Smith)</td>
+            <td onclick="showDetails('English', 'Ms. Davis', 29, 'msdavis@gmail.com')">English (Ms. Davis)</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td onclick="showDetails('English', 'Ms. Davis', 29, 'msdavis@gmail.com')">English (Ms. Davis)</td>
+            <td onclick="showDetails('Math', 'Mr. Smith', 30, 'mrsmith@gmail.com')">Math (Mr. Smith)</td>
+            <td onclick="showDetails('PE', 'Mr. Brown', 40, 'mrbrown@gmail.com')">PE (Mr. Brown)</td>
+            <td onclick="showDetails('Art', 'Ms. Wilson', 32, 'mswilson@gmail.com')">Art (Ms. Wilson)</td>
+            <td onclick="showDetails('Science', 'Mr. Dileep', 28, 'msjohnson@gmail.com')">Science (Ms. Johnson)</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12:00</td>
+            <td onclick="showDetails('History', 'Mrs. Lee', 35, 'mrslee@gmail.com')">History (Mrs. Lee)</td>
+            <td onclick="showDetails('Geography', 'Mr. Clark', 38, 'mrclark@gmail.com')">Geography (Mr. Clark)</td>
+            <td onclick="showDetails('Math', 'Mr. Smith', 30, 'mrsmith@gmail.com')">Math (Mr. Smith)</td>
+            <td onclick="showDetails('Science', 'Mr. Dileep', 28, 'msjohnson@gmail.com')">Science (Ms. Johnson)</td>
+            <td onclick="showDetails('PE', 'Mr. Brown', 40, 'mrbrown@gmail.com')">PE (Mr. Brown)</td>
+        </tr>
+        <tr>
+            <td>12:00 - 1:00</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+            <td>Lunch</td>
+        </tr>
+        <tr>
+            <td>1:00 - 2:00</td>
+            <td onclick="showDetails('Art', 'Ms. Wilson', 32, 'mswilson@gmail.com')">Art (Ms. Wilson)</td>
+            <td onclick="showDetails('History', 'Mrs. Lee', 35, 'mrslee@gmail.com')">History (Mrs. Lee)</td>
+            <td onclick="showDetails('Science', 'Mr. Dileep', 28, 'msjohnson@gmail.com')">Science (Ms. Johnson)</td>
+            <td onclick="showDetails('Math', 'Mr. Smith', 30, 'mrsmith@gmail.com')">Math (Mr. Smith)</td>
+            <td onclick="showDetails('English', 'Ms. Davis', 29, 'msdavis@gmail.com')">English (Ms. Davis)</td>
+        </tr>
+        <tr>
+            <td>2:00 - 3:00</td>
+            <td onclick="showDetails('Science', 'Mr. Dileep', 28, 'msjohnson@gmail.com')">Science (Ms. Johnson)</td>
+            <td onclick="showDetails('PE', 'Mr. Brown', 40, 'mrbrown@gmail.com')">PE (Mr. Brown)</td>
+            <td onclick="showDetails('English', 'Ms. Davis', 29, 'msdavis@gmail.com')">English (Ms. Davis)</td>
+            <td onclick="showDetails('History', 'Mrs. Lee', 35, 'mrslee@gmail.com')">History (Mrs. Lee)</td>
+            <td onclick="showDetails('Geography', 'Tanuj ', 38, 'mrclark@gmail.com')">Geography (Mr. Clark)</td>
+        </tr>
+    </table>
+
+    <div class="teacher-details" id="teacherDetails"></div>
+
+    <script src="details.js"></script>
+      
+</body>
+</html>
