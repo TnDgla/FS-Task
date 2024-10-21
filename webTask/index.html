@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body{
+            text-align: center;
+        }
+      table {
+        /* border-collapse: collapse; */
+        width: 70%;
+        margin: auto;
+      }
+
+      th,
+      td {
+        text-align: center;
+        padding: 8px;
+        border: 1px solid black;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            cursor: pointer;
+            color: blue;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>Timetable</h2>
+
+    <table  border="1">
+      <tr style="font-weight: bold;">
+          <td rowspan="6">hours</td>
+          <td>Mon</td>
+          <td>Tue</td>
+          <td>Wed</td>
+          <td>Thurs</td>
+          <td>Fri</td>
+      </tr>
+      <tr>
+          <td><a href="science.html">science</a></td>
+          <td><a href="maths.html">maths</a></td>
+          <td><a href="science.html">science</a></td>
+          <td><a href="maths.html">maths</a></td>
+          <td><a href="arts.html">arts</a></td>
+      </tr>
+      <tr>
+          <td><a href="social.html">social</a></td>
+          <td><a href="hindi.html">hindi</a></td>
+          <td><a href="english.html">english</a></td>
+          <td><a href="social.html">social</a></td>
+          <td><a href="#">sports</a></td>
+      </tr>
+      <tr>
+          <td colspan="5" style="font-weight: bold;"><h4>Lunch</h4></td>
+      </tr>
+      <tr>
+          <td><a href="science.html">science</a></td>
+          <td><a href="maths.html">maths</a></td>
+          <td><a href="science.html">science</a></td>
+          <td><a href="maths.html">maths</a></td>
+          <td rowspan="2"><a href="project.html">project</a></td>
+      </tr>
+      <tr>
+          <td><a href="social.html">social</a></td>
+          <td><a href="hindi.html">hindi</a></td>
+          <td><a href="english.html">english</a></td>
+          <td><a href="social.html">social</a></td>
+          <!-- <td></td> -->
+      </tr>
+  </table>
+</html>
