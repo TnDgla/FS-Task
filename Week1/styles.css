@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background:  #0e7bbf;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 15px;
+}
+
+th {
+    background-color: #0e7bbf;
+    color: #ffffff;
+}
+
+.subject {
+    text-decoration: none;
+    color: black;
+    transition: background 0.5s;
+    display: block;
+}
+
+.subject:hover {
+    background-color: yellowgreen;
+    border-radius: 5px;
+}
+
+.teacher-info {
+    text-align: center;
+    margin: 20px auto;
+    color: #333;
+}
+
+.teacher-info h2 {
+    margin-bottom: 20px;
+}
+
+#contact-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: peru;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contact-button:hover {
+    background: yellowgreen;
+}
